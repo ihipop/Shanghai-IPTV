@@ -127,9 +127,6 @@ rtp://239.45.3.212:5140
 ###EXTINF:-1 tvg-id="jishipindao" tvg-name="上海纪实" group-title="上海文广",纪实频道-1（普清）
 ##rtp://239.45.3.16:5140
 
-#EXTINF:-1 tvg-id="jishipindao" tvg-name="上海纪实-2" group-title="上海文广",纪实频道-2（标清）
-rtp://239.45.1.103:5140
-
 #EXTINF:-1 tvg-id="xdkt" tvg-name="炫动卡通" group-title="上海文广",哈哈炫动卡通（高清）
 rtp://239.45.1.55:5140
 ###EXTINF:-1 tvg-id="xdkt" tvg-name="炫动卡通" group-title="上海文广",哈哈炫动卡通（标清）
@@ -231,6 +228,9 @@ rtp://239.45.3.134:5140
 
 #EXTINF:-1 tvg-name="百事通动画" group-title="百事通",百事通动画（高清）
 rtp://239.45.1.110:5140
+
+#EXTINF:-1 tvg-name="百事通纪实" group-title="百事通",百事通纪实（标清）
+rtp://239.45.1.103:5140
 
 #EXTINF:-1 tvg-id="cctv-5" tvg-name="CCTV-5(体育)" tvg-logo="tv-logo/CCTV/HD/5HD.png" group-title="百事通",百事通体育（高清）
 rtp://239.45.3.54:5140 
