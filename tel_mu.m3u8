@@ -344,9 +344,6 @@ rtp://239.45.1.122:5140
 ###EXTINF:-1 tvg-id="jxws" tvg-name="江西卫视" group-title="各省卫视",江西卫视（普清）
 ##rtp://239.45.3.169:5140
 
-#EXTINF:-1 tvg-name="江西陶瓷频道" group-title="各省卫视",江西陶瓷频道（高清）
-rtp://239.45.3.50:5140
-
 #EXTINF:-1 tvg-id="szws" tvg-name="深圳卫视" group-title="各省卫视",深圳卫视（高清）
 rtp://239.45.3.231:5140
 ###EXTINF:-1 tvg-id="szws" tvg-name="深圳卫视" group-title="各省卫视",深圳卫视（标清）
@@ -461,6 +458,9 @@ rtp://239.45.1.108:5140
 
 #EXTINF:-1 tvg-id="jilu" tvg-name="湖南茶频道" group-title="专业频道",湖南茶频道（高清）
 rtp://239.45.1.109:5140
+
+#EXTINF:-1 tvg-name="江西陶瓷频道" group-title="专业频道",江西陶瓷频道（高清）
+rtp://239.45.3.50:5140
 
 #EXTINF:-1 tvg-name="4K超现场" group-title="4K频道",4K超现场（4K）
 rtp://239.45.1.2:5140
