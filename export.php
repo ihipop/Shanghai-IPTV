@@ -40,17 +40,24 @@ foreach ($lists as $item) {
     }
     $entry = new M3uParser\M3uEntry();
     $entry->setPath($uri);
-    $entry->addExtTag(
-        (new M3uParser\Tag\ExtInf())
-            ->setDuration(-1)
-            ->setTitle($title)
-            ->setAttributes([
-                'tvg-id'      => $item['epg_id'],
-                'tvg-name'    => $item['name'],
-                'group-title' => $item['group'],
-            ])
-    );
+    $extInf     = (new M3uParser\Tag\ExtInf())
+        ->setDuration(-1)
+        ->setTitle($title);
+    $attributes = [];
+    if (!empty($item['epg_id'])) {
+        $attributes['tvg-id'] = $item['epg_id'];
+    }
+    $attributes = array_replace($attributes, [
+        'tvg-name'    => $item['name'],
+        'group-title' => $item['group'],
+    ]);
+    $extInf->setAttributes($attributes);
+    $entry->addExtTag($extInf);
     $data->append($entry);
 }
 
-echo $data;
+if (!SERVER_MODE) {
+    echo $data;
+} else {
+    return $data;
+}

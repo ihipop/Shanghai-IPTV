@@ -10,4 +10,6 @@ const QUALITY_NAME_MAP = [
 ];
 $dbDSN = getenv('IPTV_DB_DSN', true) ?: 'sqlite:///iptv.sqlite';
 //eg: pdo-mysql://root:123456@127.0.0.1:3306/example?charset=UTF8
-
+if (!defined('SERVER_MODE')) {
+    define('SERVER_MODE', false);
+}
