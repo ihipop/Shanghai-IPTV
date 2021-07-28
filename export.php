@@ -9,10 +9,12 @@ $connectionParams = [
     'url' => $dbDSN,
 ];
 $conn             = DBAL\DriverManager::getConnection($connectionParams);
-$udpxy            = $argv[1] ?? null;
-$queryBuilder     = $conn->createQueryBuilder();
-$lists            = $queryBuilder->select('*')->from('iptv')->orderBy('sort', 'ASC')->fetchAllAssociative();
-$data             = new \M3uParser\M3uData();
+$args             = [];
+parse_str($argv[1] ?? '', $args);
+$udpxy        = $args['udpxy'] ?? null;
+$queryBuilder = $conn->createQueryBuilder();
+$lists        = $queryBuilder->select('*')->from('iptv')->orderBy('sort', 'ASC')->fetchAllAssociative();
+$data         = new \M3uParser\M3uData();
 $data->setAttribute('name', '上海电信IPTV组播节目单');
 foreach ($lists as $item) {
     $uri     = null;
@@ -31,7 +33,7 @@ foreach ($lists as $item) {
     if (empty($uri)) {
         continue;
     }
-    if (!empty($udpxy)) {
+    if (!empty($udpxy) && stripos($uri, 'rtp://') === 0) {
         $uri = rtrim($udpxy, ' \t\n\r\0\x0B/') . '/' . str_replace('://', '/', $uri);
     }
     $title = $item['display_title'] ?? $item['name'];
