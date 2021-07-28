@@ -1,1 +1,3 @@
 tv-logo/archive/
+/vendor
+/composer.lock

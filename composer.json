@@ -1,0 +1,7 @@
+{
+    "require": {
+        "gemorroj/m3u-parser": "^5.2",
+        "doctrine/dbal": "^3.1",
+        "ext-json": "*"
+    }
+}
