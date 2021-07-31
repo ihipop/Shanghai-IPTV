@@ -12,6 +12,8 @@ $conn             = DBAL\DriverManager::getConnection($connectionParams);
 $args             = [];
 parse_str($argv[1] ?? '', $args);
 $udpxy        = $args['udpxy'] ?? null;
+$epgKey       = $args['epg'] ?? null;
+$epgKey       = ($epgKey ?: 'rytec') . '_epg_id';
 $queryBuilder = $conn->createQueryBuilder();
 $lists        = $queryBuilder->select('*')->from('iptv')->orderBy('sort', 'ASC')->fetchAllAssociative();
 $data         = new \M3uParser\M3uData();
@@ -46,8 +48,8 @@ foreach ($lists as $item) {
         ->setDuration(-1)
         ->setTitle($title);
     $attributes = [];
-    if (!empty($item['epg_id'])) {
-        $attributes['tvg-id'] = $item['epg_id'];
+    if (!empty($item[$epgKey])) {
+        $attributes['tvg-id'] = $item[$epgKey];
     }
     $attributes = array_replace($attributes, [
         'tvg-name'    => $item['name'],
