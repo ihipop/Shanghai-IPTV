@@ -27,4 +27,4 @@ if (empty($m3u8)) {
 
 header('Content-type:application/vnd.apple.mpegurl; charset=utf-8');
 header('Content-Disposition: attachment; filename="' . $fileName . '"');
-echo str_replace('rtp://', rtrim($udpxy, ' \t\n\r\0\x0B/') . '/rtp/', $m3u8);
+echo str_replace('rtp://', rtrim($udpxy, ' \t\n\r') . '/rtp/', $m3u8);
