@@ -36,7 +36,7 @@ foreach ($lists as $item) {
         continue;
     }
     if (!empty($udpxy) && stripos($uri, 'rtp://') === 0) {
-        $uri = rtrim($udpxy, ' \t\n\r\0\x0B/') . '/' . str_replace('://', '/', $uri);
+        $uri = rtrim($udpxy, ' \t\n\r') . '/' . str_replace('://', '/', $uri);
     }
     $title = $item['display_title'] ?? $item['name'];
     if ($quality) {
