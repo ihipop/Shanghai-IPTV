@@ -13,7 +13,7 @@ $args             = [];
 parse_str($argv[1] ?? '', $args);
 $udpxy        = $args['udpxy'] ?? null;
 $epgKey       = $args['epg'] ?? null;
-$epgKey       = ($epgKey ?: 'rytec') . '_epg_id';
+$epgKey       = ($epgKey ?: 'sparks') . '_epg_id';
 $queryBuilder = $conn->createQueryBuilder();
 $lists        = $queryBuilder->select('*')->from('iptv')->orderBy('sort', 'ASC')->fetchAllAssociative();
 $data         = new \M3uParser\M3uData();

@@ -1,69 +1,69 @@
 #EXTM3U name="上海电信IPTV组播节目单"
-#EXTINF: -1 tvg-id="cctv-1" tvg-name="CCTV-1(综合)" group-title="央视频道", CCTV-综合「高清」
+#EXTINF: -1 tvg-id="CCTV1" tvg-name="CCTV-1(综合)" group-title="央视频道", CCTV-综合「高清」
 rtp://239.45.3.145:5140
-#EXTINF: -1 tvg-id="cctv-2" tvg-name="CCTV-2(经济)" group-title="央视频道", CCTV-经济「高清」
+#EXTINF: -1 tvg-id="CCTV2" tvg-name="CCTV-2(经济)" group-title="央视频道", CCTV-经济「高清」
 rtp://239.45.0.1:5140
-#EXTINF: -1 tvg-id="cctv-3" tvg-name="CCTV-3(综艺)" group-title="央视频道", CCTV-综艺「高清」
+#EXTINF: -1 tvg-id="CCTV3" tvg-name="CCTV-3(综艺)" group-title="央视频道", CCTV-综艺「高清」
 rtp://239.45.1.68:5140
-#EXTINF: -1 tvg-id="cctv-4" tvg-name="CCTV-4(国际)" group-title="央视频道", CCTV-国际「高清」
+#EXTINF: -1 tvg-id="CCTV4" tvg-name="CCTV-4(国际)" group-title="央视频道", CCTV-国际「高清」
 rtp://239.45.0.2:5140
-#EXTINF: -1 tvg-id="cctv-5" tvg-name="CCTV-5(体育)" group-title="央视频道", CCTV-体育「高清」
+#EXTINF: -1 tvg-id="CCTV5" tvg-name="CCTV-5(体育)" group-title="央视频道", CCTV-体育「高清」
 rtp://239.45.1.69:5140
-#EXTINF: -1 tvg-id="cctv-6" tvg-name="CCTV-6(电影)" group-title="央视频道", CCTV-电影「高清」
+#EXTINF: -1 tvg-id="CCTV6" tvg-name="CCTV-6(电影)" group-title="央视频道", CCTV-电影「高清」
 rtp://239.45.1.70:5140
-#EXTINF: -1 tvg-id="cctv-7" tvg-name="CCTV-7(国防军事)" group-title="央视频道", CCTV-国防军事「高清」
+#EXTINF: -1 tvg-id="CCTV7" tvg-name="CCTV-7(国防军事)" group-title="央视频道", CCTV-国防军事「高清」
 rtp://239.45.3.56:5140
-#EXTINF: -1 tvg-id="cctv-8" tvg-name="CCTV-8(电视剧)" group-title="央视频道", CCTV-电视剧「高清」
+#EXTINF: -1 tvg-id="CCTV8" tvg-name="CCTV-8(电视剧)" group-title="央视频道", CCTV-电视剧「高清」
 rtp://239.45.1.71:5140
-#EXTINF: -1 tvg-id="cctv-9" tvg-name="CCTV-9(纪录)" group-title="央视频道", CCTV-记录「高清」
+#EXTINF: -1 tvg-id="CCTV9" tvg-name="CCTV-9(纪录)" group-title="央视频道", CCTV-记录「高清」
 rtp://239.45.3.4:5140
-#EXTINF: -1 tvg-id="cctv-10" tvg-name="CCTV-10(科技)" group-title="央视频道", CCTV-科技「高清」
+#EXTINF: -1 tvg-id="CCTV10" tvg-name="CCTV-10(科技)" group-title="央视频道", CCTV-科技「高清」
 rtp://239.45.3.8:5140
-#EXTINF: -1 tvg-id="cctv-11" tvg-name="CCTV-11(戏曲)" group-title="央视频道", CCTV-戏曲「标清」
+#EXTINF: -1 tvg-id="CCTV11" tvg-name="CCTV-11(戏曲)" group-title="央视频道", CCTV-戏曲「标清」
 rtp://239.45.1.196:5140
-#EXTINF: -1 tvg-id="cctv-12" tvg-name="CCTV-12(社会法制)" group-title="央视频道", CCTV-社会法治「高清」
+#EXTINF: -1 tvg-id="CCTV12" tvg-name="CCTV-12(社会法制)" group-title="央视频道", CCTV-社会法治「高清」
 rtp://239.45.3.10:5140
-#EXTINF: -1 tvg-id="cctv-13" tvg-name="CCTV-13(新闻)" group-title="央视频道", CCTV-新闻「标清」
+#EXTINF: -1 tvg-id="CCTV13" tvg-name="CCTV-13(新闻)" group-title="央视频道", CCTV-新闻「标清」
 rtp://239.45.1.198:5140
-#EXTINF: -1 tvg-id="cctv-14" tvg-name="CCTV-14(少儿)" group-title="央视频道", CCTV-少儿「高清」
+#EXTINF: -1 tvg-id="CCTV14" tvg-name="CCTV-14(少儿)" group-title="央视频道", CCTV-少儿「高清」
 rtp://239.45.3.23:5140
-#EXTINF: -1 tvg-id="cctv-15" tvg-name="CCTV-15(音乐)" group-title="央视频道", CCTV-音乐「标清」
+#EXTINF: -1 tvg-id="CCTV15" tvg-name="CCTV-15(音乐)" group-title="央视频道", CCTV-音乐「标清」
 rtp://239.45.1.200:5140
-#EXTINF: -1 tvg-id="cctv-17" tvg-name="CCTV-17(农业农村)" group-title="央视频道", CCTV-农业农村「高清」
+#EXTINF: -1 tvg-id="CCTV17" tvg-name="CCTV-17(农业农村)" group-title="央视频道", CCTV-农业农村「高清」
 rtp://239.45.3.52:5140
-#EXTINF: -1 tvg-id="cctv9" tvg-name="CGTN" group-title="央视频道", CGTN「标清」
+#EXTINF: -1 tvg-id="CGTN" tvg-name="CGTN" group-title="央视频道", CGTN「标清」
 rtp://239.45.1.194:5140
-#EXTINF: -1 tvg-id="dfws" tvg-name="东方卫视" group-title="上海文广", 东方卫视「高清」
+#EXTINF: -1 tvg-id="东方卫视" tvg-name="东方卫视" group-title="上海文广", 东方卫视「高清」
 rtp://239.45.3.146:5140
-#EXTINF: -1 tvg-id="shanghaixinwen" tvg-name="上海新闻" group-title="上海文广", 新闻综合「高清」
+#EXTINF: -1 tvg-id="上海新闻综合" tvg-name="上海新闻" group-title="上海文广", 新闻综合「高清」
 rtp://239.45.3.209:5140
-#EXTINF: -1 tvg-id="shanghaidushi" tvg-name="上海都市" group-title="上海文广", 上海都市「高清」
+#EXTINF: -1 tvg-id="上海都市" tvg-name="上海都市" group-title="上海文广", 上海都市「高清」
 rtp://239.45.3.236:5140
-#EXTINF: -1 tvg-id="wuxingtiyu" tvg-name="五星体育" group-title="上海文广", 五星体育「高清」
+#EXTINF: -1 tvg-id="五星体育" tvg-name="五星体育" group-title="上海文广", 五星体育「高清」
 rtp://239.45.3.210:5140
-#EXTINF: -1 tvg-id="shanghaidianshiju" tvg-name="上海电视剧" group-title="上海文广", 电视剧频道「高清」
+#EXTINF: -1 tvg-name="上海电视剧" group-title="上海文广", 电视剧频道「高清」
 rtp://239.45.3.237:5140
-#EXTINF: -1 tvg-id="shenghuoshishang" tvg-name="生活时尚" group-title="上海文广", 生活时尚「高清」
+#EXTINF: -1 tvg-id="生活时尚" tvg-name="生活时尚" group-title="上海文广", 生活时尚「高清」
 rtp://239.45.3.132:5140
-#EXTINF: -1 tvg-id="jishipindao" tvg-name="上海纪实" group-title="上海文广", 上海纪实「高清」
+#EXTINF: -1 tvg-id="上海纪实" tvg-name="上海纪实" group-title="上海文广", 上海纪实「高清」
 rtp://239.45.3.212:5140
-#EXTINF: -1 tvg-name="纪实人文" group-title="上海文广", 纪实人文「高清」
+#EXTINF: -1 tvg-id="上海纪实人文" tvg-name="纪实人文" group-title="上海文广", 纪实人文「高清」
 rtp://239.45.3.212:5140
-#EXTINF: -1 tvg-id="xdkt" tvg-name="炫动卡通" group-title="上海文广", 哈哈炫动卡通「高清」
+#EXTINF: -1 tvg-name="炫动卡通" group-title="上海文广", 哈哈炫动卡通「高清」
 rtp://239.45.1.55:5140
-#EXTINF: -1 tvg-name="上海教育" group-title="上海文广", 上海教育「标清」
+#EXTINF: -1 tvg-id="上海教育台" tvg-name="上海教育" group-title="上海文广", 上海教育「标清」
 rtp://239.45.3.252:5140
-#EXTINF: -1 tvg-id="zqhd" tvg-name="足球频道" group-title="专业频道", 足球频道「高清」
+#EXTINF: -1 tvg-name="足球频道" group-title="专业频道", 足球频道「高清」
 rtp://239.45.3.22:5140
-#EXTINF: -1 tvg-id="diyicaijing" tvg-name="第一财经" group-title="上海文广", 第一财经「高清」
+#EXTINF: -1 tvg-id="上海第一财经" tvg-name="第一财经" group-title="上海文广", 第一财经「高清」
 rtp://239.45.3.211:5140
-#EXTINF: -1 tvg-id="dongfangcaijing" tvg-name="东方财经" group-title="上海文广", 东方财经-浦东「标清」
+#EXTINF: -1 tvg-name="东方财经" group-title="上海文广", 东方财经-浦东「标清」
 rtp://239.45.1.119:5140
-#EXTINF: -1 tvg-id="shanghaiwaiyu" tvg-name="上海外语" group-title="上海文广", 外语频道「高清」
+#EXTINF: -1 tvg-id="上海外语" tvg-name="上海外语" group-title="上海文广", 外语频道「高清」
 rtp://239.45.1.127:5140
-#EXTINF: -1 tvg-id="wenguangshuzidianshi-dushijuchang" tvg-name="都市剧场" group-title="上海文广", 都市剧场「高清」
+#EXTINF: -1 tvg-id="上海都市" tvg-name="都市剧场" group-title="上海文广", 都市剧场「高清」
 rtp://239.45.3.136:5140
-#EXTINF: -1 tvg-id="huanxiaojuchanghd" tvg-name="欢笑剧场" group-title="上海文广", 欢笑剧场「4K」
+#EXTINF: -1 tvg-id="欢笑剧场" tvg-name="欢笑剧场" group-title="上海文广", 欢笑剧场「4K」
 rtp://239.45.1.4:5140
 #EXTINF: -1 tvg-name="嘉定电视" group-title="上海文广", 嘉定电视「普清」
 rtp://239.45.3.185:5140
@@ -73,101 +73,101 @@ rtp://239.45.3.248:5140
 rtp://239.45.1.54:5140
 #EXTINF: -1 tvg-name="健康人生" group-title="上海文广", 健康人生「普清」
 rtp://239.45.3.214:5140
-#EXTINF: -1 tvg-id="cetv1" tvg-name="中国教育台" group-title="专业频道", 中国教育1台「高清」
+#EXTINF: -1 tvg-id="中国教育1台" tvg-name="中国教育台" group-title="专业频道", 中国教育1台「高清」
 rtp://239.45.1.125:5140
-#EXTINF: -1 tvg-id="jisuqichehd" tvg-name="极速汽车" group-title="专业频道", 极速汽车「高清」
+#EXTINF: -1 tvg-name="极速汽车" group-title="专业频道", 极速汽车「高清」
 rtp://239.45.3.49:5140
-#EXTINF: -1 tvg-id="quanjishihd" tvg-name="全纪实" group-title="专业频道", 全纪实「高清」
+#EXTINF: -1 tvg-id="全纪实" tvg-name="全纪实" group-title="专业频道", 全纪实「高清」
 rtp://239.45.3.135:5140
-#EXTINF: -1 tvg-id="youxifengyunhd" tvg-name="游戏风云" group-title="专业频道", 游戏风云「高清」
+#EXTINF: -1 tvg-id="游戏风云" tvg-name="游戏风云" group-title="专业频道", 游戏风云「高清」
 rtp://239.45.3.131:5140
-#EXTINF: -1 tvg-id="cctvpayfee-fztd" tvg-name="法治天地" group-title="专业频道", 法治天地「高清」
+#EXTINF: -1 tvg-id="法治天地" tvg-name="法治天地" group-title="专业频道", 法治天地「高清」
 rtp://239.45.1.46:5140
-#EXTINF: -1 tvg-id="cctvpayfee-qcxj" tvg-name="七彩戏剧" group-title="专业频道", 七彩戏剧「标清」
+#EXTINF: -1 tvg-name="七彩戏剧" group-title="专业频道", 七彩戏剧「标清」
 rtp://239.45.1.112:5140
-#EXTINF: -1 tvg-id="ccctvpayfee-jspd" tvg-name="金色频道" group-title="专业频道", 金色频道「标清」
+#EXTINF: -1 tvg-id="金色学堂" tvg-name="金色频道" group-title="专业频道", 金色频道「标清」
 rtp://239.45.1.118:5140
-#EXTINF: -1 tvg-id="dongmanxiuchanghd" tvg-name="动漫秀场" group-title="专业频道", 动漫秀场「高清」
+#EXTINF: -1 tvg-id="动漫秀场" tvg-name="动漫秀场" group-title="专业频道", 动漫秀场「高清」
 rtp://239.45.3.134:5140
-#EXTINF: -1 tvg-id="btvchild" tvg-name="BTV卡酷少儿" group-title="专业频道", 卡酷少儿「高清」
+#EXTINF: -1 tvg-id="卡酷少儿" tvg-name="BTV卡酷少儿" group-title="专业频道", 卡酷少儿「高清」
 rtp://239.45.0.8:5140
-#EXTINF: -1 tvg-id="hunandianshitai-hnws" tvg-name="湖南卫视" group-title="各省卫视", 湖南卫视「高清」
+#EXTINF: -1 tvg-id="湖南卫视" tvg-name="湖南卫视" group-title="各省卫视", 湖南卫视「高清」
 rtp://239.45.3.228:5140
-#EXTINF: -1 tvg-id="jiangsudianshitai-jsws" tvg-name="江苏卫视" group-title="各省卫视", 江苏卫视「高清」
+#EXTINF: -1 tvg-id="江苏卫视" tvg-name="江苏卫视" group-title="各省卫视", 江苏卫视「高清」
 rtp://239.45.3.177:5140
-#EXTINF: -1 tvg-id="zhejiangdianshitai-zjws" tvg-name="浙江卫视" group-title="各省卫视", 浙江卫视「高清」
+#EXTINF: -1 tvg-id="浙江卫视" tvg-name="浙江卫视" group-title="各省卫视", 浙江卫视「高清」
 rtp://239.45.3.178:5140
-#EXTINF: -1 tvg-id="gzws" tvg-name="贵州卫视" group-title="各省卫视", 贵州卫视「高清」
+#EXTINF: -1 tvg-id="贵州卫视" tvg-name="贵州卫视" group-title="各省卫视", 贵州卫视「高清」
 rtp://239.45.1.80:5140
-#EXTINF: -1 tvg-name="海南卫视" group-title="各省卫视", 海南卫视「高清」
+#EXTINF: -1 tvg-id="海南卫视" tvg-name="海南卫视" group-title="各省卫视", 海南卫视「高清」
 rtp://239.45.1.81:5140
-#EXTINF: -1 tvg-id="ahws" tvg-name="安徽卫视" group-title="各省卫视", 安徽卫视「高清」
+#EXTINF: -1 tvg-id="安徽卫视" tvg-name="安徽卫视" group-title="各省卫视", 安徽卫视「高清」
 rtp://239.45.1.120:5140
-#EXTINF: -1 tvg-id="dnws" tvg-name="东南卫视" group-title="各省卫视", 东南卫视「高清」
+#EXTINF: -1 tvg-id="东南卫视" tvg-name="东南卫视" group-title="各省卫视", 东南卫视「高清」
 rtp://239.45.1.121:5140
-#EXTINF: -1 tvg-id="liaoningdianshitai-lnws" tvg-name="辽宁卫视" group-title="各省卫视", 辽宁卫视「高清」
+#EXTINF: -1 tvg-id="辽宁卫视" tvg-name="辽宁卫视" group-title="各省卫视", 辽宁卫视「高清」
 rtp://239.45.1.123:5140
-#EXTINF: -1 tvg-id="tianjindianshitai-tjws" tvg-name="天津卫视" group-title="各省卫视", 天津卫视「高清」
+#EXTINF: -1 tvg-id="天津卫视" tvg-name="天津卫视" group-title="各省卫视", 天津卫视「高清」
 rtp://239.45.1.124:5140
-#EXTINF: -1 tvg-id="scws" tvg-name="四川卫视" group-title="各省卫视", 四川卫视「高清」
+#EXTINF: -1 tvg-id="四川卫视" tvg-name="四川卫视" group-title="各省卫视", 四川卫视「高清」
 rtp://239.45.1.83:5140
-#EXTINF: -1 tvg-id="BTV-1" tvg-name="北京卫视" group-title="各省卫视", 北京卫视「高清」
+#EXTINF: -1 tvg-id="北京卫视" tvg-name="北京卫视" group-title="各省卫视", 北京卫视「高清」
 rtp://239.45.3.229:5140
-#EXTINF: -1 tvg-id="gdws" tvg-name="广东卫视" group-title="各省卫视", 广东卫视「高清」
+#EXTINF: -1 tvg-id="广东卫视" tvg-name="广东卫视" group-title="各省卫视", 广东卫视「高清」
 rtp://239.45.3.230:5140
-#EXTINF: -1 tvg-id="cqws" tvg-name="重庆卫视" group-title="各省卫视", 重庆卫视「高清」
+#EXTINF: -1 tvg-id="重庆卫视" tvg-name="重庆卫视" group-title="各省卫视", 重庆卫视「高清」
 rtp://239.45.1.84:5140
-#EXTINF: -1 tvg-id="jxws" tvg-name="江西卫视" group-title="各省卫视", 江西卫视「高清」
+#EXTINF: -1 tvg-id="江西卫视" tvg-name="江西卫视" group-title="各省卫视", 江西卫视「高清」
 rtp://239.45.1.122:5140
-#EXTINF: -1 tvg-id="szws" tvg-name="深圳卫视" group-title="各省卫视", 深圳卫视「高清」
+#EXTINF: -1 tvg-id="深圳卫视" tvg-name="深圳卫视" group-title="各省卫视", 深圳卫视「高清」
 rtp://239.45.3.231:5140
-#EXTINF: -1 tvg-id="hljws" tvg-name="黑龙江卫视" group-title="各省卫视", 黑龙江卫视「高清」
+#EXTINF: -1 tvg-id="黑龙江卫视" tvg-name="黑龙江卫视" group-title="各省卫视", 黑龙江卫视「高清」
 rtp://239.45.3.232:5140
-#EXTINF: -1 tvg-id="sdws" tvg-name="山东卫视" group-title="各省卫视", 山东卫视「高清」
+#EXTINF: -1 tvg-id="山东卫视" tvg-name="山东卫视" group-title="各省卫视", 山东卫视「高清」
 rtp://239.45.3.238:5140
-#EXTINF: -1 tvg-id="hubeidianshitai-hbws" tvg-name="湖北卫视" group-title="各省卫视", 湖北卫视「高清」
+#EXTINF: -1 tvg-id="湖北卫视" tvg-name="湖北卫视" group-title="各省卫视", 湖北卫视「高清」
 rtp://239.45.3.239:5140
-#EXTINF: -1 tvg-id="sstv-sanshatv" tvg-name="三沙卫视" group-title="各省卫视", 三沙卫视「标清」
+#EXTINF: -1 tvg-id="三沙卫视" tvg-name="三沙卫视" group-title="各省卫视", 三沙卫视「标清」
 rtp://239.45.1.82:5140
-#EXTINF: -1 tvg-id="xjtv-xjtv1" tvg-name="新疆卫视" group-title="各省卫视", 新疆卫视「标清」
+#EXTINF: -1 tvg-id="新疆卫视" tvg-name="新疆卫视" group-title="各省卫视", 新疆卫视「标清」
 rtp://239.45.1.116:5140
-#EXTINF: -1 tvg-id="bingtuan-bingtuan" tvg-name="兵团卫视" group-title="各省卫视", 兵团卫视「标清」
+#EXTINF: -1 tvg-id="兵团卫视" tvg-name="兵团卫视" group-title="各省卫视", 兵团卫视「标清」
 rtp://239.45.1.117:5140
-#EXTINF: -1 tvg-id="ningxia" tvg-name="宁夏卫视" group-title="各省卫视", 宁夏卫视「标清」
+#EXTINF: -1 tvg-id="宁夏卫视" tvg-name="宁夏卫视" group-title="各省卫视", 宁夏卫视「标清」
 rtp://239.45.1.213:5140
-#EXTINF: -1 tvg-id="guangxi" tvg-name="广西卫视" group-title="各省卫视", 广西卫视「高清」
+#EXTINF: -1 tvg-id="广西卫视" tvg-name="广西卫视" group-title="各省卫视", 广西卫视「高清」
 rtp://239.45.0.5:5140
-#EXTINF: -1 tvg-id="jlws" tvg-name="吉林卫视" group-title="各省卫视", 吉林卫视「高清」
+#EXTINF: -1 tvg-id="吉林卫视" tvg-name="吉林卫视" group-title="各省卫视", 吉林卫视「高清」
 rtp://239.45.0.6:5140
-#EXTINF: -1 tvg-id="shan1xi" tvg-name="山西卫视" group-title="各省卫视", 山西卫视「标清」
+#EXTINF: -1 tvg-id="山西卫视" tvg-name="山西卫视" group-title="各省卫视", 山西卫视「标清」
 rtp://239.45.1.229:5140
-#EXTINF: -1 tvg-id="qinghai" tvg-name="青海卫视" group-title="各省卫视", 青海卫视「标清」
+#EXTINF: -1 tvg-id="青海卫视" tvg-name="青海卫视" group-title="各省卫视", 青海卫视「标清」
 rtp://239.45.1.230:5140
-#EXTINF: -1 tvg-id="satellite-xizangtv1" tvg-name="西藏卫视" group-title="各省卫视", 西藏卫视「标清」
+#EXTINF: -1 tvg-id="西藏卫视" tvg-name="西藏卫视" group-title="各省卫视", 西藏卫视「标清」
 rtp://239.45.1.231:5140
-#EXTINF: -1 tvg-id="shan3xi" tvg-name="陕西卫视" group-title="各省卫视", 陕西卫视「标清」
+#EXTINF: -1 tvg-id="陕西卫视" tvg-name="陕西卫视" group-title="各省卫视", 陕西卫视「标清」
 rtp://239.45.1.232:5140
-#EXTINF: -1 tvg-id="yunnan" tvg-name="云南卫视" group-title="各省卫视", 云南卫视「高清」
+#EXTINF: -1 tvg-id="云南卫视" tvg-name="云南卫视" group-title="各省卫视", 云南卫视「高清」
 rtp://239.45.0.4:5140
-#EXTINF: -1 tvg-id="gansu" tvg-name="甘肃卫视" group-title="各省卫视", 甘肃卫视「标清」
+#EXTINF: -1 tvg-id="甘肃卫视" tvg-name="甘肃卫视" group-title="各省卫视", 甘肃卫视「标清」
 rtp://239.45.1.234:5140
-#EXTINF: -1 tvg-id="hebeidianshitai-hbws" tvg-name="河北卫视" group-title="各省卫视", 河北卫视「高清」
+#EXTINF: -1 tvg-id="河北卫视" tvg-name="河北卫视" group-title="各省卫视", 河北卫视「高清」
 rtp://239.45.1.44:5140
-#EXTINF: -1 tvg-id="neimenggu" tvg-name="内蒙古卫视" group-title="各省卫视", 内蒙古卫视「标清」
+#EXTINF: -1 tvg-id="内蒙古卫视" tvg-name="内蒙古卫视" group-title="各省卫视", 内蒙古卫视「标清」
 rtp://239.45.1.238:5140
-#EXTINF: -1 tvg-id="henan" tvg-name="河南卫视" group-title="各省卫视", 河南卫视「高清」
+#EXTINF: -1 tvg-id="河南卫视" tvg-name="河南卫视" group-title="各省卫视", 河南卫视「高清」
 rtp://239.45.0.3:5140
-#EXTINF: -1 tvg-id="KBWS" tvg-name="康巴卫视" group-title="各省卫视", 康巴卫视「标清」
+#EXTINF: -1 tvg-id="康巴卫视" tvg-name="康巴卫视" group-title="各省卫视", 康巴卫视「标清」
 rtp://239.45.1.251:5140
-#EXTINF: -1 tvg-id="hunanjinyingjishipindao" tvg-name="金鹰纪实" group-title="专业频道", 金鹰纪实「高清」
+#EXTINF: -1 tvg-id="金鹰纪实" tvg-name="金鹰纪实" group-title="专业频道", 金鹰纪实「高清」
 rtp://239.45.1.45:5140
-#EXTINF: -1 tvg-id="jykt" tvg-name="金鹰卡通" group-title="专业频道", 金鹰卡通「标清」
+#EXTINF: -1 tvg-id="金鹰卡通" tvg-name="金鹰卡通" group-title="专业频道", 金鹰卡通「标清」
 rtp://239.45.3.119:5140
-#EXTINF: -1 tvg-id="cctvpayfee-kuailechuidiao" tvg-name="湖南快乐垂钓" group-title="专业频道", 湖南快乐垂钓「高清」
+#EXTINF: -1 tvg-id="快乐垂钓" tvg-name="湖南快乐垂钓" group-title="专业频道", 湖南快乐垂钓「高清」
 rtp://239.45.3.12:5140
-#EXTINF: -1 tvg-id="jilu" tvg-name="湖南茶频道" group-title="专业频道", 湖南茶频道「高清」
+#EXTINF: -1 tvg-id="茶" tvg-name="湖南茶频道" group-title="专业频道", 湖南茶频道「高清」
 rtp://239.45.3.18:5140
-#EXTINF: -1 tvg-id="taoci" tvg-name="江西陶瓷频道" group-title="专业频道", 江西陶瓷频道「高清」
+#EXTINF: -1 tvg-name="江西陶瓷频道" group-title="专业频道", 江西陶瓷频道「高清」
 rtp://239.45.3.50:5140
 #EXTINF: -1 tvg-name="百事通4K轮播(电影)" group-title="百事通", 百事通4K (电影)「4K」
 rtp://239.45.1.9:5140
