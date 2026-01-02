@@ -1,139 +1,273 @@
-/*
- Navicat Premium Data Transfer
-
- Source Server         : LocalHost
- Source Server Type    : MySQL
- Source Server Version : 50741 (5.7.41)
- Source Host           : 127.0.0.1:3306
- Source Schema         : yyets
-
- Target Server Type    : MySQL
- Target Server Version : 50741 (5.7.41)
- File Encoding         : 65001
-
- Date: 03/09/2024 19:33:07
-*/
-
-SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
-
--- ----------------------------
--- Table structure for iptv
--- ----------------------------
-DROP TABLE IF EXISTS `iptv`;
-CREATE TABLE `iptv` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `sort` int(255) DEFAULT NULL,
-  `rytec_epg_id` varchar(100) DEFAULT NULL,
-  `sparks_epg_id` varchar(100) DEFAULT NULL,
-  `name` varchar(100) DEFAULT NULL,
-  `logo` varchar(255) DEFAULT NULL,
-  `group` varchar(255) DEFAULT NULL,
-  `display_title` varchar(255) DEFAULT NULL,
-  `uri_4k` varchar(255) DEFAULT NULL,
-  `uri_hd` varchar(255) DEFAULT NULL,
-  `uri_sd` varchar(255) DEFAULT NULL,
-  `uri_ld` varchar(255) DEFAULT NULL,
-  `uri` varchar(255) DEFAULT NULL,
-  `backup_uris` json DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=94 DEFAULT CHARSET=utf8mb4;
-
--- ----------------------------
--- Records of iptv
--- ----------------------------
-BEGIN;
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (1, 10, 'cctv-1', 'CCTV1', 'CCTV-1(综合)', 'tv-logo/CCTV/HD/1HD.png', '央视频道', 'CCTV-综合', NULL, 'rtp://239.45.3.145:5140', 'rtp://239.45.3.188:5140', 'rtp://239.45.3.25:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:06:55');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (2, 20, 'cctv-2', 'CCTV2', 'CCTV-2(经济)', 'tv-logo/CCTV/HD/2.png', '央视频道', 'CCTV-经济', NULL, 'rtp://239.45.0.1:5140', 'rtp://239.45.3.189:5140', 'rtp://239.45.3.26:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:06:58');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (3, 30, 'cctv-3', 'CCTV3', 'CCTV-3(综艺)', 'tv-logo/CCTV/HD/3HD.png', '央视频道', 'CCTV-综艺', NULL, 'rtp://239.45.1.68:5140', 'rtp://239.45.1.75:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:05');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (4, 40, 'cctv-4', 'CCTV4', 'CCTV-4(国际)', 'tv-logo/CCTV/HD/4.png', '央视频道', 'CCTV-国际', NULL, 'rtp://239.45.0.2:5140', 'rtp://239.45.3.190:5140', 'rtp://239.45.3.28:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:28');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (5, 50, 'cctv-5', 'CCTV5', 'CCTV-5(体育)', 'tv-logo/CCTV/HD/5HD.png', '央视频道', 'CCTV-体育', NULL, 'rtp://239.45.1.69:5140', 'rtp://239.45.1.73:5140', 'rtp://239.45.3.254:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:37');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (6, 60, 'cctv-6', 'CCTV6', 'CCTV-6(电影)', 'tv-logo/CCTV/HD/6HD.png', '央视频道', 'CCTV-电影', NULL, 'rtp://239.45.1.70:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:45');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (7, 70, 'cctv-7', 'CCTV7', 'CCTV-7(国防军事)', 'tv-logo/CCTV/HD/7.png', '央视频道', 'CCTV-国防军事', NULL, 'rtp://239.45.3.56:5140', 'rtp://239.45.1.193:5140', 'rtp://239.45.3.31:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:49');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (8, 80, 'cctv-8', 'CCTV8', 'CCTV-8(电视剧)', 'tv-logo/CCTV/HD/8HD.png', '央视频道', 'CCTV-电视剧', NULL, 'rtp://239.45.1.71:5140', 'rtp://239.45.1.74:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:52');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (9, 90, 'cctv-9', 'CCTV9', 'CCTV-9(纪录)', 'tv-logo/CCTV/HD/9HD.png', '央视频道', 'CCTV-记录', NULL, 'rtp://239.45.3.4:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:07:57');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (10, 100, 'cctv-10', 'CCTV10', 'CCTV-10(科技)', 'tv-logo/CCTV/HD/10.png', '央视频道', 'CCTV-科技', NULL, 'rtp://239.45.3.8:5140', 'rtp://239.45.1.195:5140', 'rtp://239.45.3.34:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:04');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (11, 110, 'cctv-11', 'CCTV11', 'CCTV-11(戏曲)', 'tv-logo/CCTV/SD/11.png', '央视频道', 'CCTV-戏曲', NULL, NULL, 'rtp://239.45.1.196:5140', 'rtp://239.45.3.35:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:10');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (12, 120, 'cctv-12', 'CCTV12', 'CCTV-12(社会法制)', 'tv-logo/CCTV/HD/12.png', '央视频道', 'CCTV-社会法治', NULL, 'rtp://239.45.3.10:5140', 'rtp://239.45.1.197:5140', 'rtp://239.45.3.36:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:15');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (13, 130, 'cctv-13', 'CCTV13', 'CCTV-13(新闻)', 'tv-logo/CCTV/SD/13.png', '央视频道', 'CCTV-新闻', NULL, NULL, 'rtp://239.45.1.198:5140', 'rtp://239.45.3.37:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:18');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (14, 140, 'cctv-14', 'CCTV14', 'CCTV-14(少儿)', 'tv-logo/CCTV/HD/14.png', '央视频道', 'CCTV-少儿', NULL, 'rtp://239.45.3.23:5140', 'rtp://239.45.1.199:5140', 'rtp://239.45.3.38:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:21');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (15, 150, 'cctv-15', 'CCTV15', 'CCTV-15(音乐)', 'tv-logo/CCTV/SD/15.png', '央视频道', 'CCTV-音乐', NULL, NULL, 'rtp://239.45.1.200:5140', 'rtp://239.45.3.39:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:36');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (16, 160, 'cctv-17', 'CCTV17', 'CCTV-17(农业农村)', 'tv-logo/CCTV/HD/17.png', '央视频道', 'CCTV-农业农村', NULL, 'rtp://239.45.3.52:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:08:39');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (17, 170, 'cctv9', 'CGTN', 'CGTN', 'tv-logo/CCTV/SD/9.png', '央视频道', 'CGTN', NULL, NULL, 'rtp://239.45.1.194:5140', 'rtp://239.45.3.33:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:10:06');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (18, 180, 'dfws', '东方卫视', '东方卫视', 'tv-logo/卫视/HD/东方HD.png', '上海文广', '东方卫视', NULL, 'rtp://239.45.3.146:5140', 'rtp://239.45.3.242:5140', 'rtp://239.45.3.21:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:10:41');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (19, 190, 'shanghaixinwen', '上海新闻综合', '上海新闻', NULL, '上海文广', '新闻综合', NULL, 'rtp://239.45.3.209:5140', 'rtp://239.45.3.241:5140', 'rtp://239.45.3.11:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:10:51');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (20, 200, 'shanghaidushi', '上海都市', '上海都市', NULL, '上海文广', '上海都市', NULL, 'rtp://239.45.3.236:5140', 'rtp://239.45.3.243:5140', 'rtp://239.45.3.17:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:10:59');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (21, 210, 'wuxingtiyu', '五星体育', '五星体育', NULL, '上海文广', '五星体育', NULL, 'rtp://239.45.3.210:5140', 'rtp://239.45.3.15:5140', 'rtp://239.45.3.112:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:11:08');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (22, 220, 'shanghaidianshiju', NULL, '上海电视剧', NULL, '上海文广', '电视剧频道', NULL, 'rtp://239.45.3.237:5140', 'rtp://239.45.3.245:5140', 'rtp://239.45.3.14:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (23, 230, 'shenghuoshishang', '生活时尚', '生活时尚', NULL, '上海文广', '生活时尚', NULL, 'rtp://239.45.3.132:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:13:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (24, 240, 'jishipindao', '上海纪实', '上海纪实', NULL, '上海文广', '上海纪实', NULL, 'rtp://239.45.3.212:5140', 'rtp://239.45.3.247:5140', 'rtp://239.45.3.16:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:13:24');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (25, 250, NULL, '上海纪实人文', '纪实人文', NULL, '上海文广', '纪实人文', NULL, 'rtp://239.45.3.212:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:13:26');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (26, 260, 'xdkt', NULL, '炫动卡通', NULL, '上海文广', '哈哈炫动卡通', NULL, 'rtp://239.45.1.55:5140', 'rtp://239.45.3.187:5140', 'rtp://239.45.3.24:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (27, 270, NULL, '上海教育台', '上海教育', NULL, '上海文广', '上海教育', NULL, NULL, 'rtp://239.45.3.252:5140', 'rtp://239.45.3.122:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:13:58');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (28, 280, 'zqhd', NULL, '足球频道', NULL, '专业频道', '足球频道', NULL, 'rtp://239.45.3.22:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-30 18:23:41');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (29, 290, 'diyicaijing', '上海第一财经', '第一财经', NULL, '上海文广', '第一财经', NULL, 'rtp://239.45.3.211:5140', 'rtp://239.45.3.13:5140', 'rtp://239.45.3.111:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:14:39');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (30, 300, 'dongfangcaijing', NULL, '东方财经', NULL, '上海文广', '东方财经-浦东', NULL, NULL, 'rtp://239.45.1.119:5140', 'rtp://239.45.3.192:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:15:29');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (31, 310, 'shanghaiwaiyu', '上海外语', '上海外语', NULL, '上海文广', '外语频道', NULL, 'rtp://239.45.1.127:5140', 'rtp://239.45.3.249:5140', 'rtp://239.45.3.20:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:15:43');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (32, 320, 'wenguangshuzidianshi-dushijuchang', '上海都市', '都市剧场', NULL, '上海文广', '都市剧场', NULL, 'rtp://239.45.3.136:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:16:11');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (33, 330, 'huanxiaojuchanghd', '欢笑剧场', '欢笑剧场', NULL, '上海文广', '欢笑剧场', 'rtp://239.45.1.4:5140', 'rtp://239.45.3.196:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:16:18');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (34, 340, NULL, NULL, '嘉定电视', NULL, '上海文广', '嘉定电视', NULL, NULL, NULL, 'rtp://239.45.3.185:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (35, 350, NULL, NULL, '浦东电视', NULL, '上海文广', '浦东电视', NULL, NULL, 'rtp://239.45.3.248:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (36, 360, NULL, NULL, '崇明电视', NULL, '上海文广', '崇明电视', NULL, 'rtp://239.45.1.54:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-30 18:11:06');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (37, 370, NULL, NULL, '健康人生', NULL, '上海文广', '健康人生', NULL, NULL, NULL, 'rtp://239.45.3.214:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (38, 380, 'cetv1', '中国教育1台', '中国教育台', NULL, '专业频道', '中国教育1台', NULL, 'rtp://239.45.1.125:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:17:16');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (39, 390, 'jisuqichehd', NULL, '极速汽车', NULL, '专业频道', '极速汽车', NULL, 'rtp://239.45.3.49:5140', NULL, 'rtp://239.45.1.211:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (41, 410, 'quanjishihd', '全纪实', '全纪实', NULL, '专业频道', '全纪实', NULL, 'rtp://239.45.3.135:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:17:36');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (42, 420, 'youxifengyunhd', '游戏风云', '游戏风云', NULL, '专业频道', '游戏风云', NULL, 'rtp://239.45.3.131:5140', 'rtp://239.45.3.64:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:17:46');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (43, 430, 'cctvpayfee-fztd', '法治天地', '法治天地', NULL, '专业频道', '法治天地', NULL, 'rtp://239.45.1.46:5140', 'rtp://239.45.1.192:5140', 'rtp://239.45.3.60:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:17:54');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (44, 440, 'cctvpayfee-qcxj', NULL, '七彩戏剧', NULL, '专业频道', '七彩戏剧', NULL, NULL, 'rtp://239.45.1.112:5140', 'rtp://239.45.3.61:5140', NULL, NULL, '2021-07-28 03:07:01', '2021-07-28 11:07:01');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (45, 450, 'ccctvpayfee-jspd', '金色学堂', '金色频道', NULL, '专业频道', '金色频道', NULL, NULL, 'rtp://239.45.1.118:5140', 'rtp://239.45.3.51:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:18:23');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (46, 460, 'dongmanxiuchanghd', '动漫秀场', '动漫秀场', NULL, '专业频道', '动漫秀场', NULL, 'rtp://239.45.3.134:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:18:31');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (47, 470, 'btvchild', '卡酷少儿', 'BTV卡酷少儿', NULL, '专业频道', '卡酷少儿', NULL, 'rtp://239.45.0.8:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:18:56');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (48, 480, 'hunandianshitai-hnws', '湖南卫视', '湖南卫视', NULL, '各省卫视', '湖南卫视', NULL, 'rtp://239.45.3.228:5140', 'rtp://239.45.1.215:5140', 'rtp://239.45.3.45:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:03');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (49, 490, 'jiangsudianshitai-jsws', '江苏卫视', '江苏卫视', NULL, '各省卫视', '江苏卫视', NULL, 'rtp://239.45.3.177:5140', 'rtp://239.45.1.216:5140', 'rtp://239.45.3.40:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:10');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (50, 500, 'zhejiangdianshitai-zjws', '浙江卫视', '浙江卫视', NULL, '各省卫视', '浙江卫视', NULL, 'rtp://239.45.3.178:5140', 'rtp://239.45.1.217:5140', 'rtp://239.45.3.41:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:18');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (51, 510, 'gzws', '贵州卫视', '贵州卫视', NULL, '各省卫视', '贵州卫视', NULL, 'rtp://239.45.1.80:5140', 'rtp://239.45.1.241:5140', 'rtp://239.45.3.224:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:24');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (52, 520, NULL, '海南卫视', '海南卫视', NULL, '各省卫视', '海南卫视', NULL, 'rtp://239.45.1.81:5140', 'rtp://239.45.1.218:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:30');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (53, 530, 'ahws', '安徽卫视', '安徽卫视', NULL, '各省卫视', '安徽卫视', NULL, 'rtp://239.45.1.120:5140', 'rtp://239.45.1.223:5140', 'rtp://239.45.3.43:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:37');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (54, 540, 'dnws', '东南卫视', '东南卫视', NULL, '各省卫视', '东南卫视', NULL, 'rtp://239.45.1.121:5140', 'rtp://239.45.1.224:5140', 'rtp://239.45.3.227:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:42');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (55, 550, 'liaoningdianshitai-lnws', '辽宁卫视', '辽宁卫视', NULL, '各省卫视', '辽宁卫视', NULL, 'rtp://239.45.1.123:5140', 'rtp://239.45.1.222:5140', 'rtp://239.45.3.43:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:47');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (56, 560, 'tianjindianshitai-tjws', '天津卫视', '天津卫视', NULL, '各省卫视', '天津卫视', NULL, 'rtp://239.45.1.124:5140', 'rtp://239.45.1.226:5140', 'rtp://239.45.3.168:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:53');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (57, 570, 'scws', '四川卫视', '四川卫视', NULL, '各省卫视', '四川卫视', NULL, 'rtp://239.45.1.83:5140', 'rtp://239.45.1.220:5140', 'rtp://239.45.3.48:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:54');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (58, 580, 'BTV-1', '北京卫视', '北京卫视', NULL, '各省卫视', '北京卫视', NULL, 'rtp://239.45.3.229:5140', 'rtp://239.45.1.214:5140', 'rtp://239.45.3.109:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:56');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (59, 590, 'gdws', '广东卫视', '广东卫视', NULL, '各省卫视', '广东卫视', NULL, 'rtp://239.45.3.230:5140', 'rtp://239.45.1.235:5140', 'rtp://239.45.3.65:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:19:57');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (60, 600, 'cqws', '重庆卫视', '重庆卫视', NULL, '各省卫视', '重庆卫视', NULL, 'rtp://239.45.1.84:5140', 'rtp://239.45.1.240:5140', 'rtp://239.45.3.223:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:04');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (61, 610, 'jxws', '江西卫视', '江西卫视', NULL, '各省卫视', '江西卫视', NULL, 'rtp://239.45.1.122:5140', 'rtp://239.45.1.227:5140', 'rtp://239.45.3.169:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:02');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (62, 620, 'szws', '深圳卫视', '深圳卫视', NULL, '各省卫视', '深圳卫视', NULL, 'rtp://239.45.3.231:5140', 'rtp://239.45.1.115:5140', 'rtp://239.45.3.141:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:06');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (63, 630, 'hljws', '黑龙江卫视', '黑龙江卫视', NULL, '各省卫视', '黑龙江卫视', NULL, 'rtp://239.45.3.232:5140', 'rtp://239.45.1.236:5140', 'rtp://239.45.3.220:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:08');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (64, 640, 'sdws', '山东卫视', '山东卫视', NULL, '各省卫视', '山东卫视', NULL, 'rtp://239.45.3.238:5140', 'rtp://239.45.1.221:5140', 'rtp://239.45.3.44:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:09');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (65, 650, 'hubeidianshitai-hbws', '湖北卫视', '湖北卫视', NULL, '各省卫视', '湖北卫视', NULL, 'rtp://239.45.3.239:5140', 'rtp://239.45.1.239:5140', 'rtp://239.45.3.222:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:11');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (66, 660, 'sstv-sanshatv', '三沙卫视', '三沙卫视', NULL, '各省卫视', '三沙卫视', NULL, NULL, 'rtp://239.45.1.82:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:17');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (67, 670, 'xjtv-xjtv1', '新疆卫视', '新疆卫视', NULL, '各省卫视', '新疆卫视', NULL, NULL, 'rtp://239.45.1.116:5140', 'rtp://239.45.3.142:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:18');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (68, 680, 'bingtuan-bingtuan', '兵团卫视', '兵团卫视', NULL, '各省卫视', '兵团卫视', NULL, NULL, 'rtp://239.45.1.117:5140', 'rtp://239.45.3.143:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:24');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (69, 690, 'ningxia', '宁夏卫视', '宁夏卫视', NULL, '各省卫视', '宁夏卫视', NULL, NULL, 'rtp://239.45.1.213:5140', 'rtp://239.45.3.176:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:25');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (70, 700, 'guangxi', '广西卫视', '广西卫视', NULL, '各省卫视', '广西卫视', NULL, 'rtp://239.45.0.5:5140', 'rtp://239.45.1.219:5140', 'rtp://239.45.3.46:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:27');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (71, 710, 'jlws', '吉林卫视', '吉林卫视', NULL, '各省卫视', '吉林卫视', NULL, 'rtp://239.45.0.6:5140', 'rtp://239.45.1.228:5140', 'rtp://239.45.3.170:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:29');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (72, 720, 'shan1xi', '山西卫视', '山西卫视', NULL, '各省卫视', '山西卫视', NULL, NULL, 'rtp://239.45.1.229:5140', 'rtp://239.45.3.171:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:30');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (73, 730, 'qinghai', '青海卫视', '青海卫视', NULL, '各省卫视', '青海卫视', NULL, NULL, 'rtp://239.45.1.230:5140', 'rtp://239.45.3.172:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:32');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (74, 740, 'satellite-xizangtv1', '西藏卫视', '西藏卫视', NULL, '各省卫视', '西藏卫视', NULL, NULL, 'rtp://239.45.1.231:5140', 'rtp://239.45.3.173:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:34');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (75, 750, 'shan3xi', '陕西卫视', '陕西卫视', NULL, '各省卫视', '陕西卫视', NULL, NULL, 'rtp://239.45.1.232:5140', 'rtp://239.45.3.174:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:35');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (76, 760, 'yunnan', '云南卫视', '云南卫视', NULL, '各省卫视', '云南卫视', NULL, 'rtp://239.45.0.4:5140', 'rtp://239.45.1.233:5140', 'rtp://239.45.3.180:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:37');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (77, 770, 'gansu', '甘肃卫视', '甘肃卫视', NULL, '各省卫视', '甘肃卫视', NULL, NULL, 'rtp://239.45.1.234:5140', 'rtp://239.45.3.175:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:38');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (78, 780, 'hebeidianshitai-hbws', '河北卫视', '河北卫视', NULL, '各省卫视', '河北卫视', NULL, 'rtp://239.45.1.44:5140', 'rtp://239.45.1.237:5140', 'rtp://239.45.3.226:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:39');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (79, 790, 'neimenggu', '内蒙古卫视', '内蒙古卫视', NULL, '各省卫视', '内蒙古卫视', NULL, NULL, 'rtp://239.45.1.238:5140', 'rtp://239.45.3.221:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:41');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (80, 800, 'henan', '河南卫视', '河南卫视', NULL, '各省卫视', '河南卫视', NULL, 'rtp://239.45.0.3:5140', 'rtp://239.45.1.242:5140', 'rtp://239.45.3.225:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:42');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (81, 810, 'KBWS', '康巴卫视', '康巴卫视', NULL, '各省卫视', '康巴卫视', NULL, NULL, 'rtp://239.45.1.251:5140', NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:47');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (82, 820, 'hunanjinyingjishipindao', '金鹰纪实', '金鹰纪实', NULL, '专业频道', '金鹰纪实', NULL, 'rtp://239.45.1.45:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:20:55');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (83, 830, 'jykt', '金鹰卡通', '金鹰卡通', NULL, '专业频道', '金鹰卡通', NULL, NULL, 'rtp://239.45.3.119:5140', 'rtp://239.45.3.118:5140', NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:21:00');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (84, 840, 'cctvpayfee-kuailechuidiao', '快乐垂钓', '湖南快乐垂钓', NULL, '专业频道', '湖南快乐垂钓', NULL, 'rtp://239.45.3.12:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:21:11');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (85, 850, 'jilu', '茶', '湖南茶频道', NULL, '专业频道', '湖南茶频道', NULL, 'rtp://239.45.3.18:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2024-09-03 19:21:23');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (86, 860, 'taoci', NULL, '江西陶瓷频道', NULL, '专业频道', '江西陶瓷频道', NULL, 'rtp://239.45.3.50:5140', NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-30 18:29:00');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (87, 870, NULL, NULL, '百事通4K轮播(电影)', NULL, '百事通', '百事通4K (电影)', 'rtp://239.45.1.9:5140', NULL, NULL, NULL, NULL, '{\"uri_4k\": [\"rtp://239.45.1.42:5140\", \"rtp://239.45.3.107:5140\"]}', '2021-07-28 03:07:01', '2021-07-30 18:30:50');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (89, 890, NULL, NULL, '百事通4K轮播(动物)', NULL, '百事通', '百事通4K (动物)', 'rtp://239.45.1.10:5140', NULL, NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-31 22:52:00');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (90, 900, NULL, NULL, '百事通4K轮播(宠物)', NULL, '百事通', '百事通4K (宠物)', 'rtp://239.45.1.11:5140', NULL, NULL, NULL, NULL, NULL, '2021-07-28 03:07:01', '2021-07-31 22:52:06');
-INSERT INTO `iptv` (`id`, `sort`, `rytec_epg_id`, `sparks_epg_id`, `name`, `logo`, `group`, `display_title`, `uri_4k`, `uri_hd`, `uri_sd`, `uri_ld`, `uri`, `backup_uris`, `created_at`, `updated_at`) VALUES (93, 1000, NULL, NULL, '百事通纪实', NULL, '百事通', '百事通纪实', NULL, NULL, 'rtp://239.45.1.103:5140', NULL, NULL, NULL, NULL, '2021-07-30 18:34:25');
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE channels (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(100) NOT NULL UNIQUE,           -- 频道名称 (如 "CCTV1", "东方卫视")
+    display_name VARCHAR(255),                    -- 显示名称 (如 "CCTV-综合")
+    category VARCHAR(100),                        -- 分类 (如 "IPTV央视", "IPTV上海")
+    logo VARCHAR(255),                            -- 台标路径
+    sort_order INTEGER DEFAULT 0,                 -- 排序
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO channels VALUES(1,'新闻综合','新闻综合','IPTV上海,',NULL,1,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(2,'东方卫视','东方卫视','IPTV上海,',NULL,2,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(3,'生活时尚','生活时尚','IPTV上海,',NULL,3,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(4,'都市剧场','都市剧场','IPTV上海,',NULL,4,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(5,'都市频道','都市频道','IPTV上海,',NULL,5,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(6,'欢笑剧场','欢笑剧场','IPTV上海,',NULL,6,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(7,'东方影视','东方影视','IPTV上海,',NULL,7,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(8,'五星体育','五星体育','IPTV上海,',NULL,8,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(9,'纪实科教','纪实科教','IPTV上海,',NULL,9,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(10,'金鹰纪实','金鹰纪实','IPTV上海,',NULL,10,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(11,'乐游','乐游','IPTV上海,',NULL,11,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(12,'茶频道','茶频道','IPTV上海,',NULL,12,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(13,'第一财经','第一财经','IPTV上海,',NULL,13,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(14,'东方财经','东方财经','IPTV上海,',NULL,14,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(15,'家庭理财','家庭理财','IPTV上海,',NULL,15,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(16,'财富天下','财富天下','IPTV上海,',NULL,16,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(17,'法治天地','法治天地','IPTV上海,',NULL,17,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(18,'上海教育','上海教育','IPTV上海,',NULL,18,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(19,'快乐垂钓','快乐垂钓','IPTV上海,',NULL,19,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(20,'游戏风云','游戏风云','IPTV上海,',NULL,20,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(21,'BesTV4K电影','BesTV4K电影','IPTV上海,',NULL,21,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(22,'BesTV4K记录','BesTV4K记录','IPTV上海,',NULL,22,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(23,'BesTV电影介绍','BesTV电影介绍','IPTV上海,',NULL,23,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(24,'未知','未知','IPTV上海,',NULL,24,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(25,'未知1','未知1','IPTV上海,',NULL,25,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(26,'CCTV1','CCTV1','IPTV央视,',NULL,26,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(27,'CCTV2','CCTV2','IPTV央视,',NULL,27,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(28,'CCTV3','CCTV3','IPTV央视,',NULL,28,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(29,'CCTV4','CCTV4','IPTV央视,',NULL,29,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(30,'CCTV5','CCTV5','IPTV央视,',NULL,30,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(31,'CCTV5+','CCTV5+','IPTV央视,',NULL,31,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(32,'CCTV6','CCTV6','IPTV央视,',NULL,32,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(33,'CCTV7','CCTV7','IPTV央视,',NULL,33,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(34,'CCTV8','CCTV8','IPTV央视,',NULL,34,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(35,'CCTV9','CCTV9','IPTV央视,',NULL,35,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(36,'CCTV10','CCTV10','IPTV央视,',NULL,36,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(37,'CCTV11','CCTV11','IPTV央视,',NULL,37,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(38,'CCTV12','CCTV12','IPTV央视,',NULL,38,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(39,'CCTV13','CCTV13','IPTV央视,',NULL,39,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(40,'CCTV14','CCTV14','IPTV央视,',NULL,40,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(41,'CCTV15','CCTV15','IPTV央视,',NULL,41,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(42,'CCTV16','CCTV16','IPTV央视,',NULL,42,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(43,'CCTV17','CCTV17','IPTV央视,',NULL,43,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(44,'CCTV','CCTV','IPTV央视,',NULL,44,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(45,'CHC动作','CHC动作','IPTV央视,',NULL,45,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(46,'CHC家庭','CHC家庭','IPTV央视,',NULL,46,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(47,'CHC影迷','CHC影迷','IPTV央视,',NULL,47,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(48,'CCTV兵器科技','CCTV兵器科技','IPTV央视,',NULL,48,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(49,'CCTV第一剧场','CCTV第一剧场','IPTV央视,',NULL,49,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(50,'CCTV风云剧场','CCTV风云剧场','IPTV央视,',NULL,50,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(51,'CCTV风云音乐','CCTV风云音乐','IPTV央视,',NULL,51,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(52,'CCTV风云足球','CCTV风云足球','IPTV央视,',NULL,52,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(53,'CCTV高尔夫网球','CCTV高尔夫网球','IPTV央视,',NULL,53,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(54,'CCTV怀旧剧场','CCTV怀旧剧场','IPTV央视,',NULL,54,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(55,'CCTV女性时尚','CCTV女性时尚','IPTV央视,',NULL,55,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(56,'CCTV世界地理','CCTV世界地理','IPTV央视,',NULL,56,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(57,'CCTV文化精品','CCTV文化精品','IPTV央视,',NULL,57,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(58,'CCTV央视台球','CCTV央视台球','IPTV央视,',NULL,58,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(59,'CETV1','CETV1','IPTV央视,',NULL,59,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(60,'CETV2','CETV2','IPTV央视,',NULL,60,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(61,'CETV4','CETV4','IPTV央视,',NULL,61,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(62,'CETV早期教育','CETV早期教育','IPTV央视,',NULL,62,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(63,'CGTN','CGTN','IPTV央视,',NULL,63,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(64,'安徽卫视','安徽卫视','IPTV卫视,',NULL,64,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(65,'北京卫视','北京卫视','IPTV卫视,',NULL,65,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(66,'兵团卫视','兵团卫视','IPTV卫视,',NULL,66,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(67,'东南卫视','东南卫视','IPTV卫视,',NULL,67,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(68,'甘肃卫视','甘肃卫视','IPTV卫视,',NULL,68,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(69,'广东卫视','广东卫视','IPTV卫视,',NULL,69,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(70,'广西卫视','广西卫视','IPTV卫视,',NULL,70,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(71,'贵州卫视','贵州卫视','IPTV卫视,',NULL,71,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(72,'海南卫视','海南卫视','IPTV卫视,',NULL,72,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(73,'河北卫视','河北卫视','IPTV卫视,',NULL,73,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(74,'河南卫视','河南卫视','IPTV卫视,',NULL,74,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(75,'黑龙江卫视','黑龙江卫视','IPTV卫视,',NULL,75,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(76,'湖北卫视','湖北卫视','IPTV卫视,',NULL,76,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(77,'湖南卫视','湖南卫视','IPTV卫视,',NULL,77,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(78,'吉林卫视','吉林卫视','IPTV卫视,',NULL,78,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(79,'江苏卫视','江苏卫视','IPTV卫视,',NULL,79,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(80,'江西卫视','江西卫视','IPTV卫视,',NULL,80,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(81,'辽宁卫视','辽宁卫视','IPTV卫视,',NULL,81,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(82,'内蒙古卫视','内蒙古卫视','IPTV卫视,',NULL,82,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(83,'宁夏卫视','宁夏卫视','IPTV卫视,',NULL,83,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(84,'青海卫视','青海卫视','IPTV卫视,',NULL,84,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(85,'三沙卫视','三沙卫视','IPTV卫视,',NULL,85,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(86,'山东卫视','山东卫视','IPTV卫视,',NULL,86,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(87,'山西卫视','山西卫视','IPTV卫视,',NULL,87,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(88,'陕西卫视','陕西卫视','IPTV卫视,',NULL,88,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(89,'深圳卫视','深圳卫视','IPTV卫视,',NULL,89,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(90,'四川卫视','四川卫视','IPTV卫视,',NULL,90,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(91,'天津卫视','天津卫视','IPTV卫视,',NULL,91,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(92,'西藏卫视','西藏卫视','IPTV卫视,',NULL,92,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(93,'新疆卫视','新疆卫视','IPTV卫视,',NULL,93,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(94,'延边卫视','延边卫视','IPTV卫视,',NULL,94,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(95,'云南卫视','云南卫视','IPTV卫视,',NULL,95,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(96,'浙江卫视','浙江卫视','IPTV卫视,',NULL,96,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(97,'重庆卫视','重庆卫视','IPTV卫视,',NULL,97,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(98,'金色学堂','金色学堂','IPTV少儿,',NULL,98,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(99,'BesTV4K动画','BesTV4K动画','IPTV少儿,',NULL,99,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(100,'动漫秀场','动漫秀场','IPTV少儿,',NULL,100,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(101,'哈哈炫动','哈哈炫动','IPTV少儿,',NULL,101,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(102,'嘉佳卡通','嘉佳卡通','IPTV少儿,',NULL,102,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(103,'金鹰卡通','金鹰卡通','IPTV少儿,',NULL,103,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channels VALUES(104,'卡酷少儿','卡酷少儿','IPTV少儿,',NULL,104,'2026-01-02 14:30:36','2026-01-02 14:30:36');
+CREATE TABLE channel_streams (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    channel_id INTEGER NOT NULL,                  -- 关联频道ID
+    stream_url VARCHAR(500) NOT NULL,             -- 流地址
+    quality VARCHAR(20) DEFAULT 'SD',             -- 清晰度: 4K, HD, SD, LD
+    route_index INTEGER DEFAULT 1,                -- 线路编号 (同一频道同一清晰度的第几条线路)
+    is_primary BOOLEAN DEFAULT 0,                 -- 是否为主线路
+    status VARCHAR(20) DEFAULT 'active',          -- 状态: active, inactive
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (channel_id) REFERENCES channels(id) ON DELETE CASCADE
+);
+INSERT INTO channel_streams VALUES(1,1,'rtp://233.18.204.57:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(2,2,'rtp://233.18.204.51:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(3,2,'rtp://233.18.204.224:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(4,3,'rtp://233.18.204.45:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(5,4,'rtp://233.18.204.48:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(6,5,'rtp://233.18.204.53:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(7,6,'rtp://233.18.204.115:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(8,6,'rtp://233.18.204.205:5140','4K',2,0,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(9,6,'rtp://233.18.204.50:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(10,7,'rtp://233.18.204.55:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(11,8,'rtp://233.18.204.58:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(12,9,'rtp://239.45.1.14:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(13,10,'rtp://233.18.204.104:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(14,11,'rtp://233.18.204.47:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(15,12,'rtp://233.18.204.43:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(16,13,'rtp://233.18.204.59:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(17,14,'rtp://233.18.204.65:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(18,15,'rtp://233.18.204.157:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(19,16,'rtp://233.18.204.231:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(20,17,'rtp://233.18.204.49:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(21,18,'rtp://233.18.204.63:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(22,19,'rtp://233.18.204.42:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(23,20,'rtp://233.18.204.44:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(24,21,'rtp://233.18.204.169:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(25,22,'rtp://233.18.204.170:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(26,23,'rtp://233.18.204.116:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(27,24,'rtp://233.18.204.202:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(28,25,'rtp://233.18.204.201:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(29,26,'rtp://233.18.204.168:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(30,26,'rtp://233.18.204.52:5140','SD',2,0,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(31,27,'rtp://233.18.204.68:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(32,28,'rtp://233.18.204.69:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(33,29,'rtp://233.18.204.70:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(34,30,'rtp://233.18.204.71:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(35,31,'rtp://233.18.204.67:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(36,32,'rtp://233.18.204.72:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(37,33,'rtp://233.18.204.73:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(38,34,'rtp://233.18.204.74:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(39,35,'rtp://233.18.204.75:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(40,36,'rtp://233.18.204.76:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(41,37,'rtp://233.18.204.77:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(42,38,'rtp://233.18.204.78:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(43,39,'rtp://233.18.204.79:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(44,40,'rtp://233.18.204.80:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(45,41,'rtp://233.18.204.81:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(46,42,'rtp://233.18.204.82:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(47,42,'rtp://233.18.204.114:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(48,42,'rtp://233.18.204.215:5140','4K',2,0,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(49,43,'rtp://233.18.204.83:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(50,44,'rtp://233.18.204.188:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(51,44,'rtp://233.18.204.204:5140','4K',2,0,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(52,45,'rtp://233.18.204.174:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(53,46,'rtp://233.18.204.173:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(54,47,'rtp://233.18.204.175:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(55,48,'rtp://233.18.204.178:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(56,49,'rtp://233.18.204.184:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(57,50,'rtp://233.18.204.183:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(58,51,'rtp://233.18.204.185:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(59,52,'rtp://233.18.204.176:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(60,53,'rtp://233.18.204.181:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(61,54,'rtp://233.18.204.182:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(62,55,'rtp://233.18.204.180:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(63,56,'rtp://233.18.204.179:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(64,57,'rtp://233.18.204.186:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(65,58,'rtp://233.18.204.177:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(66,59,'rtp://233.18.204.98:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(67,60,'rtp://233.18.204.154:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(68,61,'rtp://233.18.204.111:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(69,62,'rtp://233.18.204.187:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(70,63,'rtp://233.18.204.28:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(71,64,'rtp://233.18.204.93:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(72,65,'rtp://233.18.204.87:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(73,65,'rtp://233.18.204.209:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(74,66,'rtp://233.18.204.221:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(75,67,'rtp://233.18.204.94:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(76,68,'rtp://233.18.204.110:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(77,69,'rtp://233.18.204.88:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(78,69,'rtp://233.18.204.218:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(79,70,'rtp://233.18.204.107:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(80,71,'rtp://233.18.204.101:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(81,72,'rtp://233.18.204.102:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(82,73,'rtp://233.18.204.103:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(83,74,'rtp://233.18.204.105:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(84,75,'rtp://233.18.204.90:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(85,76,'rtp://233.18.204.92:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(86,77,'rtp://233.18.204.86:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(87,77,'rtp://233.18.204.227:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(88,78,'rtp://233.18.204.108:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(89,79,'rtp://233.18.204.85:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(90,79,'rtp://233.18.204.226:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(91,80,'rtp://233.18.204.95:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(92,81,'rtp://233.18.204.96:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(93,82,'rtp://233.18.204.217:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(94,83,'rtp://233.18.204.230:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(95,84,'rtp://233.18.204.112:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(96,85,'rtp://233.18.204.172:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(97,86,'rtp://233.18.204.91:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(98,86,'rtp://233.18.204.228:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(99,87,'rtp://233.18.204.211:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(100,88,'rtp://233.18.204.223:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(101,89,'rtp://233.18.204.89:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(102,89,'rtp://233.18.204.219:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(103,90,'rtp://233.18.204.99:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(104,90,'rtp://233.18.204.225:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(105,91,'rtp://233.18.204.97:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(106,92,'rtp://233.18.204.222:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(107,93,'rtp://233.18.204.220:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(108,94,'rtp://233.18.204.155:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(109,95,'rtp://233.18.204.106:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(110,96,'rtp://233.18.204.84:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(111,96,'rtp://233.18.204.229:5140','4K',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(112,97,'rtp://233.18.204.100:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(113,98,'rtp://233.18.204.66:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(114,99,'rtp://233.18.204.171:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(115,100,'rtp://233.18.204.46:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(116,101,'rtp://233.18.204.54:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(117,102,'rtp://233.18.204.151:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(118,103,'rtp://233.18.204.113:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+INSERT INTO channel_streams VALUES(119,104,'rtp://233.18.204.109:5140','SD',1,1,'active','2026-01-02 14:30:36','2026-01-02 14:30:36');
+CREATE TABLE channel_epg_mappings (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    channel_id INTEGER NOT NULL,                  -- 关联频道ID
+    epg_source VARCHAR(50) NOT NULL,              -- EPG源名称 (如 "rytec", "sparks", "epg.pw")
+    epg_id VARCHAR(100) NOT NULL,                 -- 该EPG源中的频道ID
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (channel_id) REFERENCES channels(id) ON DELETE CASCADE,
+    UNIQUE(channel_id, epg_source)
+);
+PRAGMA writable_schema=ON;
+CREATE TABLE IF NOT EXISTS sqlite_sequence(name,seq);
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('channels',104);
+INSERT INTO sqlite_sequence VALUES('channel_streams',119);
+CREATE INDEX idx_channels_category ON channels(category);
+CREATE INDEX idx_channels_sort ON channels(sort_order);
+CREATE INDEX idx_channels_name ON channels(name);
+CREATE INDEX idx_streams_channel ON channel_streams(channel_id);
+CREATE INDEX idx_streams_quality ON channel_streams(quality);
+CREATE INDEX idx_streams_primary ON channel_streams(is_primary);
+CREATE INDEX idx_streams_status ON channel_streams(status);
+CREATE INDEX idx_epg_source ON channel_epg_mappings(epg_source);
+CREATE INDEX idx_epg_channel ON channel_epg_mappings(channel_id);
+PRAGMA writable_schema=OFF;
 COMMIT;
-
-SET FOREIGN_KEY_CHECKS = 1;
