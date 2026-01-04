@@ -85,10 +85,10 @@ foreach ($channels as $channel) {
         
         $matched++;
         
-        // 如果已经有 logo 且与当前匹配的相同,跳过
-        if ($currentLogo === $logoFile) {
+        // 如果已经有 logo 且与当前匹配的相同,并且文件存在,则跳过
+        if ($currentLogo && file_exists($logoDir . '/' . $currentLogo)) {
             $skipped++;
-            echo "[跳过] {$channelName} [{$category}] - 已有相同台标: {$logoFile}\n";
+            echo "[跳过] {$channelName} [{$category}] - 已有台标且文件存在: {$currentLogo}\n";
             continue;
         }
         

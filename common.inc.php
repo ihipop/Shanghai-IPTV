@@ -33,8 +33,7 @@ const QUALITY_DISPLAY_MAP = [
 
 // EPG 源配置
 const EPG_SOURCES = [
-    'rytec' => 'Rytec EPG',
-    'sparks' => 'Sparks EPG',
+    'erw' => 'Erw EPG',
     'epg.pw' => 'EPG.pw',
 ];
 

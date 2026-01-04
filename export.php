@@ -18,7 +18,7 @@ $conn = DBAL\DriverManager::getConnection($connectionParams);
 $args = [];
 parse_str($argv[1] ?? '', $args);
 $udpxy = $args['udpxy'] ?? null;
-$epgSource = $args['epg'] ?? 'sparks'; // 默认使用 sparks EPG
+$epgSource = $args['epg'] ?? 'erw'; // 默认使用 erw EPG
 $exportAllRoutes = isset($args['all_routes']) && $args['all_routes'] === '1'; // 是否导出所有线路
 $outputFile = $args['file'] ?? null; // 输出文件名
 $logoPrefix = $args['logo_prefix'] ?? null; // 台标 URL 前缀
@@ -29,7 +29,7 @@ if (empty($outputFile) && !SERVER_MODE) {
     echo "\n";
     echo "参数说明:\n";
     echo "  file         - 输出文件名 (必需)\n";
-    echo "  epg          - EPG源 (sparks|rytec|epg.pw, 默认: sparks)\n";
+    echo "  epg          - EPG源 (erw|epg.pw, 默认: erw)\n";
     echo "  all_routes   - 导出所有线路 (1=是, 默认: 仅主线路)\n";
     echo "  udpxy        - UDPXY服务器地址\n";
     echo "\n";
