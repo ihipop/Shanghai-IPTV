@@ -135,8 +135,9 @@ foreach ($channels as $channel) {
         $quality = $stream['quality'];
         $routeIndex = $stream['route_index'];
         
-        // 检查是否应该跳过此流 (同一分类中的同名频道,只保留最佳质量)
-        // 4K 总是单独导出,不参与此过滤
+        // 画质过滤: 同一分类中的同名频道,只保留最佳质量 (HD > SD > LD)
+        // 4K 频道通过 import.php 自动归类到 "4K频道" 分类,因此 categoryKey 已实现隔离
+        // 此处的 4K 判断为防御性编程,防止手动修改数据库导致的分类异常
         if ($quality !== '4K') {
             $categoryKey = $category . '|' . $channelName;
             
