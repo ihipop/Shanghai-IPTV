@@ -2,7 +2,21 @@
 
 上海电信 IPTV 组播节目单管理工具,支持 TXT 格式导入和 M3U8 格式导出。
 
-## 功能特性
+# 直接使用
+
+## 组播播放列表
+
+- GitHub: https://raw.githubusercontent.com/ihipop/Shanghai-IPTV/master/tel_mu.m3u8
+- CDN: https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tel_mu.m3u8
+
+## LOGO 目录
+
+- GitHub: https://raw.githubusercontent.com/ihipop/Shanghai-IPTV/master/tv-logo/
+- CDN: https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/
+
+# 自定义使用
+
+## 功能特性介绍
 
 - ✅ 支持 TXT 格式 IPTV 列表导入
 - ✅ 支持 M3U8 格式导出
@@ -144,15 +158,6 @@ php -S 0.0.0.0:8080
 ### channel_epg_mappings (EPG映射表)
 - 支持多个 EPG 源
 - 灵活的 EPG ID 映射
-
-## 组播播放列表
-
-- GitHub: https://raw.githubusercontent.com/ihipop/Shanghai-IPTV/master/tel_mu.m3u8
-
-## LOGO 目录
-
-- GitHub: https://raw.githubusercontent.com/ihipop/Shanghai-IPTV/master/tv-logo/
-- CDN: https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/
 
 ## 环境要求
 
