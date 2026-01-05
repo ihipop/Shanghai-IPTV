@@ -47,7 +47,8 @@ php export.php "file=output.m3u8"
 | `file` | 输出文件名 | 必需 |
 | `epg` | EPG源 (erw/epg.pw) | erw |
 | `all_routes` | 导出所有线路 (1=是) | 仅主线路 |
-| `udpxy` | UDPXY服务器地址 | 无 |
+| `udpxy` | udpxy 或 [rtp2httpd](https://github.com/stackia/rtp2httpd) 服务器地址 | 无 |
+| `fcc` | FCC服务器地址 (需要 rtp2httpd 支持) | 无 |
 | `logo_prefix` | 台标URL前缀 | 无 |
 
 ### 使用示例
@@ -67,6 +68,13 @@ php export.php "file=output.m3u8&all_routes=1"
 php export.php "file=output.m3u8&udpxy=http://192.168.1.1:4022"
 ```
 
+**使用 rtp2httpd 并启用 FCC (快速换台):**
+```bash
+php export.php "file=output.m3u8&udpxy=http://iptv.lan:5200&fcc=124.75.25.211:7777"
+```
+
+> **注意:** FCC (Fast Channel Change) 功能需要 [rtp2httpd](https://github.com/stackia/rtp2httpd) 支持。使用 FCC 可以显著提升换台速度。
+
 **指定台标 URL 前缀:**
 ```bash
 php export.php "file=output.m3u8&logo_prefix=https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/"
@@ -74,7 +82,7 @@ php export.php "file=output.m3u8&logo_prefix=https://cdn.jsdelivr.net/gh/ihipop/
 
 **组合参数:**
 ```bash
-php export.php "file=output.m3u8&epg=erw&all_routes=1&udpxy=http://192.168.1.1:4022&logo_prefix=https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/"
+php export.php "file=output.m3u8&epg=erw&all_routes=1&udpxy=http://iptv.lan:5200&fcc=124.75.25.211:7777&logo_prefix=https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/"
 ```
 
 ## 台标管理

@@ -22,6 +22,7 @@ $epgSource = $args['epg'] ?? 'erw'; // 默认使用 erw EPG
 $exportAllRoutes = isset($args['all_routes']) && $args['all_routes'] === '1'; // 是否导出所有线路
 $outputFile = $args['file'] ?? null; // 输出文件名
 $logoPrefix = $args['logo_prefix'] ?? null; // 台标 URL 前缀
+$fccServer = $args['fcc'] ?? null; // FCC 服务器地址 (例如: 1.2.3.4:5678)
 
 // 检查是否指定了输出文件
 if (empty($outputFile) && !SERVER_MODE) {
@@ -31,13 +32,15 @@ if (empty($outputFile) && !SERVER_MODE) {
     echo "  file         - 输出文件名 (必需)\n";
     echo "  epg          - EPG源 (erw|epg.pw, 默认: erw)\n";
     echo "  all_routes   - 导出所有线路 (1=是, 默认: 仅主线路)\n";
-    echo "  udpxy        - UDPXY服务器地址\n";
+    echo "  udpxy        - udpxy 或者 rtp2httpd (https://github.com/stackia/rtp2httpd，推荐)服务器地址\n";
+    echo "  fcc          - FCC服务器地址 (例如: 1.2.3.4:5678，需要 rtp2httpd 支持)\n";
     echo "\n";
     echo "示例:\n";
     echo "  php export.php \"file=output.m3u8\"\n";
     echo "  php export.php \"file=output.m3u8&epg=rytec\"\n";
     echo "  php export.php \"file=output.m3u8&epg=sparks&all_routes=1\"\n";
     echo "  php export.php \"file=output.m3u8&udpxy=http://192.168.1.1:4022\"\n";
+    echo "  php export.php \"file=output.m3u8&fcc=1.2.3.4:5678\"\n";
     exit(1);
 }
 
@@ -161,6 +164,7 @@ foreach ($channels as $channel) {
             $streamUrl = rtrim($udpxy, " \t\n\r\0\x0B/") . '/' . str_replace('://', '/', $streamUrl);
         }
         
+      
         // 应用清晰度标签
         $displayName = $channelName;
         if (isset(QUALITY_DISPLAY_MAP[$quality])) {
@@ -170,6 +174,17 @@ foreach ($channels as $channel) {
         // 多线路标识
         if ($exportAllRoutes && $routeIndex > 1) {
             $displayName .= ' 线路' . $routeIndex;
+        }
+        
+        // 构建查询参数数组
+        $queryParams = [];
+        if (!empty($fccServer)) {
+            $queryParams['fcc'] = $fccServer;
+        }
+        
+        // 添加查询参数到 URL
+        if (!empty($queryParams)) {
+            $streamUrl .= '?' . http_build_query($queryParams);
         }
         
         // 创建 M3U 条目
