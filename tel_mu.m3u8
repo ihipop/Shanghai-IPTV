@@ -135,8 +135,6 @@ rtp://233.18.204.84:5140?fcc=124.75.25.211%3A7777
 rtp://233.18.204.100:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="欢笑剧场" group-title="数字频道" tvg-id="欢笑剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/欢笑剧场.png", 欢笑剧场
 rtp://233.18.204.50:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="北京纪实科教" group-title="数字频道" tvg-id="北京纪实科教" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京纪实科教.png", 北京纪实科教
-rtp://239.45.1.14:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="金鹰纪实" group-title="数字频道" tvg-id="金鹰纪实" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金鹰纪实.png", 金鹰纪实
 rtp://233.18.204.104:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="乐游" group-title="数字频道" tvg-id="乐游" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/乐游.png", 乐游
