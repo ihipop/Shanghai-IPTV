@@ -266,11 +266,25 @@ CREATE TABLE channel_epg_mappings (
     FOREIGN KEY (channel_id) REFERENCES channels(id) ON DELETE CASCADE,
     UNIQUE(channel_id, epg_source)
 );
+CREATE TABLE category_order (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    category VARCHAR(100) NOT NULL UNIQUE,
+    sort_order INTEGER NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO category_order VALUES(1,'上海文广',1,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+INSERT INTO category_order VALUES(2,'CCTV',2,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+INSERT INTO category_order VALUES(3,'卫视频道',3,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+INSERT INTO category_order VALUES(4,'4K频道',6,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+INSERT INTO category_order VALUES(5,'数字频道',4,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+INSERT INTO category_order VALUES(6,'少儿频道',5,'2026-01-06 03:33:21','2026-01-06 03:33:21');
 PRAGMA writable_schema=ON;
 CREATE TABLE IF NOT EXISTS sqlite_sequence(name,seq);
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('channels',115);
 INSERT INTO sqlite_sequence VALUES('channel_streams',119);
+INSERT INTO sqlite_sequence VALUES('category_order',6);
 CREATE INDEX idx_channels_category ON channels(category);
 CREATE INDEX idx_channels_sort ON channels(sort_order);
 CREATE INDEX idx_channels_name ON channels(name);
@@ -279,5 +293,6 @@ CREATE INDEX idx_streams_quality ON channel_streams(quality);
 CREATE INDEX idx_streams_status ON channel_streams(status);
 CREATE INDEX idx_epg_source ON channel_epg_mappings(epg_source);
 CREATE INDEX idx_epg_channel ON channel_epg_mappings(channel_id);
+CREATE INDEX idx_category_order_sort ON category_order(sort_order);
 PRAGMA writable_schema=OFF;
 COMMIT;

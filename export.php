@@ -44,12 +44,15 @@ if (empty($outputFile) && !SERVER_MODE) {
     exit(1);
 }
 
-// 查询频道数据 (按 sort_order 排序)
+// 查询频道数据 (按分类优先级和 sort_order 排序)
+// 使用 LEFT JOIN 关联 category_order 表获取分类排序
 $queryBuilder = $conn->createQueryBuilder();
 $queryBuilder
     ->select('c.id', 'c.name', 'c.category', 'c.sort_order', 'c.logo')
     ->from('channels', 'c')
-    ->orderBy('c.sort_order', 'ASC');
+    ->leftJoin('c', 'category_order', 'co', 'c.category = co.category')
+    ->orderBy('COALESCE(co.sort_order, 999)', 'ASC')
+    ->addOrderBy('c.sort_order', 'ASC');
 
 $channels = $queryBuilder->fetchAllAssociative();
 
