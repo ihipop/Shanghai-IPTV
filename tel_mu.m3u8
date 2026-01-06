@@ -1,4 +1,4 @@
-#EXTM3U name="上海电信IPTV组播节目单"
+#EXTM3U name="上海电信IPTV组播节目单" url-tvg="http://e.erw.cc/e.xml.gz" x-tvg-url="http://e.erw.cc/e.xml.gz"
 #EXTINF: -1 tvg-name="上海新闻综合" group-title="上海文广" tvg-id="上海新闻综合" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海新闻综合.png", 上海新闻综合
 rtp://233.18.204.57:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="东方卫视" group-title="上海文广" tvg-id="东方卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方卫视.png", 东方卫视

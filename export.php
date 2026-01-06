@@ -56,8 +56,31 @@ $queryBuilder
 
 $channels = $queryBuilder->fetchAllAssociative();
 
+// 查询 EPG 源的 XML URL
+$epgUrl = null;
+if (!empty($epgSource)) {
+    $epgQuery = $conn->createQueryBuilder()
+        ->select('source_url')
+        ->from('epg_sources')
+        ->where('source_name = :source_name')
+        ->andWhere('is_active = 1')
+        ->setParameter('source_name', $epgSource)
+        ->fetchAssociative();
+    
+    if ($epgQuery) {
+        $epgUrl = $epgQuery['source_url'];
+    }
+}
+
 $data = new \M3uParser\M3uData();
 $data->setAttribute('name', '上海电信IPTV组播节目单');
+
+// 如果找到 EPG 源 URL，添加到 M3U8 头部
+// 同时添加 url-tvg 和 x-tvg-url 以确保最大兼容性
+if (!empty($epgUrl)) {
+    $data->setAttribute('url-tvg', $epgUrl);
+    $data->setAttribute('x-tvg-url', $epgUrl);
+}
 
 // 输出进度信息到 STDERR
 log_message("开始导出 M3U8...\n");
