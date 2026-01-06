@@ -155,8 +155,6 @@ rtp://233.18.204.42:5140?fcc=124.75.25.211%3A7777
 rtp://233.18.204.44:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="BesTV电影介绍" group-title="数字频道" tvg-id="BesTV电影介绍", BesTV电影介绍
 rtp://233.18.204.116:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="未知" group-title="数字频道" tvg-id="未知", 未知
-rtp://233.18.204.202:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="IPTV测试" group-title="数字频道" tvg-id="IPTV测试", IPTV测试
 rtp://233.18.204.201:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="CHC动作电影" group-title="数字频道" tvg-id="CHC动作电影" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC动作电影.png", CHC动作电影

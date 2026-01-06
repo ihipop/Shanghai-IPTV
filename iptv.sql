@@ -36,7 +36,6 @@ INSERT INTO channels VALUES(22,'游戏风云','游戏风云','数字频道','游
 INSERT INTO channels VALUES(23,'BesTV电影','BesTV电影','4K频道',NULL,23,'2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channels VALUES(24,'BesTV记录','BesTV记录','4K频道',NULL,24,'2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channels VALUES(25,'BesTV电影介绍','BesTV电影介绍','数字频道',NULL,25,'2026-01-03 14:47:15','2026-01-03 14:47:15');
-INSERT INTO channels VALUES(26,'未知','未知','数字频道',NULL,26,'2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channels VALUES(27,'IPTV测试','IPTV测试','数字频道',NULL,27,'2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channels VALUES(28,'CCTV1','CCTV1','CCTV','CCTV1.png',28,'2026-01-03 14:47:15','2026-01-03 16:37:45');
 INSERT INTO channels VALUES(29,'CCTV2','CCTV2','CCTV','CCTV2.png',29,'2026-01-03 14:47:15','2026-01-03 16:37:45');
@@ -163,7 +162,6 @@ INSERT INTO channel_streams VALUES(23,22,'rtp://233.18.204.44:5140','HD',1,'acti
 INSERT INTO channel_streams VALUES(24,23,'rtp://233.18.204.169:5140','4K',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channel_streams VALUES(25,24,'rtp://233.18.204.170:5140','4K',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channel_streams VALUES(26,25,'rtp://233.18.204.116:5140','HD',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
-INSERT INTO channel_streams VALUES(27,26,'rtp://233.18.204.202:5140','HD',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channel_streams VALUES(28,27,'rtp://233.18.204.201:5140','HD',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channel_streams VALUES(29,28,'rtp://233.18.204.168:5140','HD',1,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
 INSERT INTO channel_streams VALUES(30,28,'rtp://233.18.204.52:5140','HD',2,'active','2026-01-03 14:47:15','2026-01-03 14:47:15');
@@ -279,12 +277,24 @@ INSERT INTO category_order VALUES(3,'卫视频道',3,'2026-01-06 03:33:21','2026
 INSERT INTO category_order VALUES(4,'4K频道',6,'2026-01-06 03:33:21','2026-01-06 03:33:21');
 INSERT INTO category_order VALUES(5,'数字频道',4,'2026-01-06 03:33:21','2026-01-06 03:33:21');
 INSERT INTO category_order VALUES(6,'少儿频道',5,'2026-01-06 03:33:21','2026-01-06 03:33:21');
+CREATE TABLE epg_sources (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    source_name VARCHAR(50) NOT NULL UNIQUE,     -- EPG源名称
+    source_url VARCHAR(500) NOT NULL,            -- EPG XML文件的URL
+    description TEXT,                            -- 描述信息
+    is_active BOOLEAN DEFAULT 1,                 -- 是否启用
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+INSERT INTO epg_sources VALUES(1,'erw','http://e.erw.cc/e.xml.gz','EPG源 - erw',1,'2026-01-06 03:55:10','2026-01-06 03:55:10');
+INSERT INTO epg_sources VALUES(2,'epg.pw','https://epg.pw/xmltv/epg_CN.xml.gz','EPG源 - epg.pw',1,'2026-01-06 03:55:10','2026-01-06 03:55:10');
 PRAGMA writable_schema=ON;
 CREATE TABLE IF NOT EXISTS sqlite_sequence(name,seq);
 DELETE FROM sqlite_sequence;
 INSERT INTO sqlite_sequence VALUES('channels',115);
 INSERT INTO sqlite_sequence VALUES('channel_streams',119);
 INSERT INTO sqlite_sequence VALUES('category_order',6);
+INSERT INTO sqlite_sequence VALUES('epg_sources',2);
 CREATE INDEX idx_channels_category ON channels(category);
 CREATE INDEX idx_channels_sort ON channels(sort_order);
 CREATE INDEX idx_channels_name ON channels(name);
@@ -294,5 +304,7 @@ CREATE INDEX idx_streams_status ON channel_streams(status);
 CREATE INDEX idx_epg_source ON channel_epg_mappings(epg_source);
 CREATE INDEX idx_epg_channel ON channel_epg_mappings(channel_id);
 CREATE INDEX idx_category_order_sort ON category_order(sort_order);
+CREATE INDEX idx_epg_sources_name ON epg_sources(source_name);
+CREATE INDEX idx_epg_sources_active ON epg_sources(is_active);
 PRAGMA writable_schema=OFF;
 COMMIT;
