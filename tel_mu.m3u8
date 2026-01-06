@@ -1,231 +1,231 @@
 #EXTM3U name="上海电信IPTV组播节目单"
-#EXTINF: -1 tvg-name="上海新闻综合" group-title="上海文广" tvg-id="上海新闻综合" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海新闻综合.png", 上海新闻综合「高清」
+#EXTINF: -1 tvg-name="上海新闻综合" group-title="上海文广" tvg-id="上海新闻综合" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海新闻综合.png", 上海新闻综合
 rtp://233.18.204.57:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="东方卫视" group-title="上海文广" tvg-id="东方卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方卫视.png", 东方卫视「高清」
+#EXTINF: -1 tvg-name="东方卫视" group-title="上海文广" tvg-id="东方卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方卫视.png", 东方卫视
 rtp://233.18.204.51:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="东方卫视" group-title="4K频道" tvg-id="东方卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方卫视.png", 东方卫视「4K」
 rtp://233.18.204.224:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="生活时尚" group-title="上海文广" tvg-id="生活时尚" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/生活时尚.png", 生活时尚「高清」
+#EXTINF: -1 tvg-name="生活时尚" group-title="上海文广" tvg-id="生活时尚" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/生活时尚.png", 生活时尚
 rtp://233.18.204.45:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="都市剧场" group-title="上海文广" tvg-id="都市剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/都市剧场.png", 都市剧场「高清」
+#EXTINF: -1 tvg-name="都市剧场" group-title="上海文广" tvg-id="都市剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/都市剧场.png", 都市剧场
 rtp://233.18.204.48:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="上海都市" group-title="上海文广" tvg-id="上海都市" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海都市.png", 上海都市「高清」
+#EXTINF: -1 tvg-name="上海都市" group-title="上海文广" tvg-id="上海都市" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海都市.png", 上海都市
 rtp://233.18.204.53:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="欢笑剧场" group-title="4K频道" tvg-id="欢笑剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/欢笑剧场.png", 欢笑剧场「4K」
 rtp://233.18.204.115:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="欢笑剧场" group-title="数字频道" tvg-id="欢笑剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/欢笑剧场.png", 欢笑剧场「高清」
+#EXTINF: -1 tvg-name="欢笑剧场" group-title="数字频道" tvg-id="欢笑剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/欢笑剧场.png", 欢笑剧场
 rtp://233.18.204.50:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="东方影视" group-title="上海文广" tvg-id="东方影视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方影视.png", 东方影视「高清」
+#EXTINF: -1 tvg-name="东方影视" group-title="上海文广" tvg-id="东方影视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方影视.png", 东方影视
 rtp://233.18.204.55:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="五星体育" group-title="上海文广" tvg-id="五星体育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/五星体育.png", 五星体育「高清」
+#EXTINF: -1 tvg-name="五星体育" group-title="上海文广" tvg-id="五星体育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/五星体育.png", 五星体育
 rtp://233.18.204.58:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="北京纪实科教" group-title="数字频道" tvg-id="北京纪实科教" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京纪实科教.png", 北京纪实科教「高清」
+#EXTINF: -1 tvg-name="北京纪实科教" group-title="数字频道" tvg-id="北京纪实科教" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京纪实科教.png", 北京纪实科教
 rtp://239.45.1.14:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="金鹰纪实" group-title="数字频道" tvg-id="金鹰纪实" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金鹰纪实.png", 金鹰纪实「高清」
+#EXTINF: -1 tvg-name="金鹰纪实" group-title="数字频道" tvg-id="金鹰纪实" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金鹰纪实.png", 金鹰纪实
 rtp://233.18.204.104:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="乐游" group-title="数字频道" tvg-id="乐游" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/乐游.png", 乐游「高清」
+#EXTINF: -1 tvg-name="乐游" group-title="数字频道" tvg-id="乐游" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/乐游.png", 乐游
 rtp://233.18.204.47:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="茶频道" group-title="数字频道" tvg-id="茶频道" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/茶频道.png", 茶频道「高清」
+#EXTINF: -1 tvg-name="茶频道" group-title="数字频道" tvg-id="茶频道" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/茶频道.png", 茶频道
 rtp://233.18.204.43:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="上海第一财经" group-title="上海文广" tvg-id="上海第一财经" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海第一财经.png", 上海第一财经「高清」
+#EXTINF: -1 tvg-name="上海第一财经" group-title="上海文广" tvg-id="上海第一财经" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海第一财经.png", 上海第一财经
 rtp://233.18.204.59:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="东方财经" group-title="上海文广" tvg-id="东方财经" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方财经.png", 东方财经「高清」
+#EXTINF: -1 tvg-name="东方财经" group-title="上海文广" tvg-id="东方财经" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东方财经.png", 东方财经
 rtp://233.18.204.65:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="家庭理财" group-title="数字频道" tvg-id="家庭理财" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/家庭理财.png", 家庭理财
 rtp://233.18.204.157:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="财富天下" group-title="数字频道" tvg-id="财富天下" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/财富天下.png", 财富天下「高清」
+#EXTINF: -1 tvg-name="财富天下" group-title="数字频道" tvg-id="财富天下" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/财富天下.png", 财富天下
 rtp://233.18.204.231:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="法治天地" group-title="数字频道" tvg-id="法治天地" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/法治天地.png", 法治天地「高清」
+#EXTINF: -1 tvg-name="法治天地" group-title="数字频道" tvg-id="法治天地" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/法治天地.png", 法治天地
 rtp://233.18.204.49:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="上海教育" group-title="上海文广" tvg-id="上海教育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海教育.png", 上海教育「高清」
+#EXTINF: -1 tvg-name="上海教育" group-title="上海文广" tvg-id="上海教育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/上海教育.png", 上海教育
 rtp://233.18.204.63:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="快乐垂钓" group-title="数字频道" tvg-id="快乐垂钓" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/快乐垂钓.png", 快乐垂钓「高清」
+#EXTINF: -1 tvg-name="快乐垂钓" group-title="数字频道" tvg-id="快乐垂钓" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/快乐垂钓.png", 快乐垂钓
 rtp://233.18.204.42:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="游戏风云" group-title="数字频道" tvg-id="游戏风云" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/游戏风云.png", 游戏风云「高清」
+#EXTINF: -1 tvg-name="游戏风云" group-title="数字频道" tvg-id="游戏风云" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/游戏风云.png", 游戏风云
 rtp://233.18.204.44:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="BesTV电影" group-title="4K频道" tvg-id="BesTV电影", BesTV电影「4K」
 rtp://233.18.204.169:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="BesTV记录" group-title="4K频道" tvg-id="BesTV记录", BesTV记录「4K」
 rtp://233.18.204.170:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="BesTV电影介绍" group-title="数字频道" tvg-id="BesTV电影介绍", BesTV电影介绍「高清」
+#EXTINF: -1 tvg-name="BesTV电影介绍" group-title="数字频道" tvg-id="BesTV电影介绍", BesTV电影介绍
 rtp://233.18.204.116:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="未知" group-title="数字频道" tvg-id="未知", 未知「高清」
+#EXTINF: -1 tvg-name="未知" group-title="数字频道" tvg-id="未知", 未知
 rtp://233.18.204.202:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="IPTV测试" group-title="数字频道" tvg-id="IPTV测试", IPTV测试「高清」
+#EXTINF: -1 tvg-name="IPTV测试" group-title="数字频道" tvg-id="IPTV测试", IPTV测试
 rtp://233.18.204.201:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV1" group-title="CCTV" tvg-id="CCTV1" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV1.png", CCTV1「高清」
+#EXTINF: -1 tvg-name="CCTV1" group-title="CCTV" tvg-id="CCTV1" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV1.png", CCTV1
 rtp://233.18.204.168:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV2" group-title="CCTV" tvg-id="CCTV2" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV2.png", CCTV2「高清」
+#EXTINF: -1 tvg-name="CCTV2" group-title="CCTV" tvg-id="CCTV2" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV2.png", CCTV2
 rtp://233.18.204.68:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV3" group-title="CCTV" tvg-id="CCTV3" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV3.png", CCTV3「高清」
+#EXTINF: -1 tvg-name="CCTV3" group-title="CCTV" tvg-id="CCTV3" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV3.png", CCTV3
 rtp://233.18.204.69:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV4" group-title="CCTV" tvg-id="CCTV4" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV4.png", CCTV4「高清」
+#EXTINF: -1 tvg-name="CCTV4" group-title="CCTV" tvg-id="CCTV4" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV4.png", CCTV4
 rtp://233.18.204.70:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV5" group-title="CCTV" tvg-id="CCTV5" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV5.png", CCTV5「高清」
+#EXTINF: -1 tvg-name="CCTV5" group-title="CCTV" tvg-id="CCTV5" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV5.png", CCTV5
 rtp://233.18.204.71:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV5+" group-title="CCTV" tvg-id="CCTV5+" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV5+.png", CCTV5+「高清」
+#EXTINF: -1 tvg-name="CCTV5+" group-title="CCTV" tvg-id="CCTV5+" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV5+.png", CCTV5+
 rtp://233.18.204.67:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV6" group-title="CCTV" tvg-id="CCTV6" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV6.png", CCTV6「高清」
+#EXTINF: -1 tvg-name="CCTV6" group-title="CCTV" tvg-id="CCTV6" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV6.png", CCTV6
 rtp://233.18.204.72:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV7" group-title="CCTV" tvg-id="CCTV7" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV7.png", CCTV7「高清」
+#EXTINF: -1 tvg-name="CCTV7" group-title="CCTV" tvg-id="CCTV7" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV7.png", CCTV7
 rtp://233.18.204.73:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV8" group-title="CCTV" tvg-id="CCTV8" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV8.png", CCTV8「高清」
+#EXTINF: -1 tvg-name="CCTV8" group-title="CCTV" tvg-id="CCTV8" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV8.png", CCTV8
 rtp://233.18.204.74:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV9" group-title="CCTV" tvg-id="CCTV9" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV9.png", CCTV9「高清」
+#EXTINF: -1 tvg-name="CCTV9" group-title="CCTV" tvg-id="CCTV9" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV9.png", CCTV9
 rtp://233.18.204.75:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV10" group-title="CCTV" tvg-id="CCTV10" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV10.png", CCTV10「高清」
+#EXTINF: -1 tvg-name="CCTV10" group-title="CCTV" tvg-id="CCTV10" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV10.png", CCTV10
 rtp://233.18.204.76:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV11" group-title="CCTV" tvg-id="CCTV11" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV11.png", CCTV11「高清」
+#EXTINF: -1 tvg-name="CCTV11" group-title="CCTV" tvg-id="CCTV11" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV11.png", CCTV11
 rtp://233.18.204.77:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV12" group-title="CCTV" tvg-id="CCTV12" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV12.png", CCTV12「高清」
+#EXTINF: -1 tvg-name="CCTV12" group-title="CCTV" tvg-id="CCTV12" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV12.png", CCTV12
 rtp://233.18.204.78:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV13" group-title="CCTV" tvg-id="CCTV13" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV13.png", CCTV13「高清」
+#EXTINF: -1 tvg-name="CCTV13" group-title="CCTV" tvg-id="CCTV13" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV13.png", CCTV13
 rtp://233.18.204.79:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV14" group-title="CCTV" tvg-id="CCTV14" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV14.png", CCTV14「高清」
+#EXTINF: -1 tvg-name="CCTV14" group-title="CCTV" tvg-id="CCTV14" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV14.png", CCTV14
 rtp://233.18.204.80:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV15" group-title="CCTV" tvg-id="CCTV15" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV15.png", CCTV15「高清」
+#EXTINF: -1 tvg-name="CCTV15" group-title="CCTV" tvg-id="CCTV15" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV15.png", CCTV15
 rtp://233.18.204.81:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV16" group-title="CCTV" tvg-id="CCTV16" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV16.png", CCTV16「高清」
+#EXTINF: -1 tvg-name="CCTV16" group-title="CCTV" tvg-id="CCTV16" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV16.png", CCTV16
 rtp://233.18.204.82:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="CCTV16" group-title="4K频道" tvg-id="CCTV16" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV16.png", CCTV16「4K」
 rtp://233.18.204.114:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CCTV17" group-title="CCTV" tvg-id="CCTV17" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV17.png", CCTV17「高清」
+#EXTINF: -1 tvg-name="CCTV17" group-title="CCTV" tvg-id="CCTV17" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV17.png", CCTV17
 rtp://233.18.204.83:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="CCTV4K" group-title="4K频道" tvg-id="CCTV4K" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CCTV4K.png", CCTV4K「4K」
 rtp://233.18.204.188:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CHC动作电影" group-title="数字频道" tvg-id="CHC动作电影" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC动作电影.png", CHC动作电影「高清」
+#EXTINF: -1 tvg-name="CHC动作电影" group-title="数字频道" tvg-id="CHC动作电影" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC动作电影.png", CHC动作电影
 rtp://233.18.204.174:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CHC家庭影院" group-title="数字频道" tvg-id="CHC家庭影院" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC家庭影院.png", CHC家庭影院「高清」
+#EXTINF: -1 tvg-name="CHC家庭影院" group-title="数字频道" tvg-id="CHC家庭影院" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC家庭影院.png", CHC家庭影院
 rtp://233.18.204.173:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CHC影迷电影" group-title="数字频道" tvg-id="CHC影迷电影" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC影迷电影.png", CHC影迷电影「高清」
+#EXTINF: -1 tvg-name="CHC影迷电影" group-title="数字频道" tvg-id="CHC影迷电影" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CHC影迷电影.png", CHC影迷电影
 rtp://233.18.204.175:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="兵器科技" group-title="数字频道" tvg-id="兵器科技" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/兵器科技.png", 兵器科技「高清」
+#EXTINF: -1 tvg-name="兵器科技" group-title="数字频道" tvg-id="兵器科技" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/兵器科技.png", 兵器科技
 rtp://233.18.204.178:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="第一剧场" group-title="数字频道" tvg-id="第一剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/第一剧场.png", 第一剧场「高清」
+#EXTINF: -1 tvg-name="第一剧场" group-title="数字频道" tvg-id="第一剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/第一剧场.png", 第一剧场
 rtp://233.18.204.184:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="风云剧场" group-title="数字频道" tvg-id="风云剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云剧场.png", 风云剧场「高清」
+#EXTINF: -1 tvg-name="风云剧场" group-title="数字频道" tvg-id="风云剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云剧场.png", 风云剧场
 rtp://233.18.204.183:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="风云音乐" group-title="数字频道" tvg-id="风云音乐" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云音乐.png", 风云音乐「高清」
+#EXTINF: -1 tvg-name="风云音乐" group-title="数字频道" tvg-id="风云音乐" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云音乐.png", 风云音乐
 rtp://233.18.204.185:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="风云足球" group-title="数字频道" tvg-id="风云足球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云足球.png", 风云足球「高清」
+#EXTINF: -1 tvg-name="风云足球" group-title="数字频道" tvg-id="风云足球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/风云足球.png", 风云足球
 rtp://233.18.204.176:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="高尔夫网球" group-title="数字频道" tvg-id="高尔夫网球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/高尔夫网球.png", 高尔夫网球「高清」
+#EXTINF: -1 tvg-name="高尔夫网球" group-title="数字频道" tvg-id="高尔夫网球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/高尔夫网球.png", 高尔夫网球
 rtp://233.18.204.181:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="怀旧剧场" group-title="数字频道" tvg-id="怀旧剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/怀旧剧场.png", 怀旧剧场「高清」
+#EXTINF: -1 tvg-name="怀旧剧场" group-title="数字频道" tvg-id="怀旧剧场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/怀旧剧场.png", 怀旧剧场
 rtp://233.18.204.182:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="女性时尚" group-title="数字频道" tvg-id="女性时尚" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/女性时尚.png", 女性时尚「高清」
+#EXTINF: -1 tvg-name="女性时尚" group-title="数字频道" tvg-id="女性时尚" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/女性时尚.png", 女性时尚
 rtp://233.18.204.180:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="世界地理" group-title="数字频道" tvg-id="世界地理" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/世界地理.png", 世界地理「高清」
+#EXTINF: -1 tvg-name="世界地理" group-title="数字频道" tvg-id="世界地理" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/世界地理.png", 世界地理
 rtp://233.18.204.179:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="文化精品" group-title="数字频道" tvg-id="文化精品" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/文化精品.png", 文化精品「高清」
+#EXTINF: -1 tvg-name="文化精品" group-title="数字频道" tvg-id="文化精品" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/文化精品.png", 文化精品
 rtp://233.18.204.186:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="央视台球" group-title="数字频道" tvg-id="央视台球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/央视台球.png", 央视台球「高清」
+#EXTINF: -1 tvg-name="央视台球" group-title="数字频道" tvg-id="央视台球" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/央视台球.png", 央视台球
 rtp://233.18.204.177:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CETV1" group-title="CCTV" tvg-id="CETV1" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV1.png", CETV1「高清」
+#EXTINF: -1 tvg-name="CETV1" group-title="CCTV" tvg-id="CETV1" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV1.png", CETV1
 rtp://233.18.204.98:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="CETV2" group-title="CCTV" tvg-id="CETV2" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV2.png", CETV2
 rtp://233.18.204.154:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CETV4" group-title="CCTV" tvg-id="CETV4" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV4.png", CETV4「高清」
+#EXTINF: -1 tvg-name="CETV4" group-title="CCTV" tvg-id="CETV4" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV4.png", CETV4
 rtp://233.18.204.111:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CETV早期教育" group-title="CCTV" tvg-id="CETV早期教育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV早期教育.png", CETV早期教育「高清」
+#EXTINF: -1 tvg-name="CETV早期教育" group-title="CCTV" tvg-id="CETV早期教育" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CETV早期教育.png", CETV早期教育
 rtp://233.18.204.187:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="CGTN" group-title="CCTV" tvg-id="CGTN" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CGTN.png", CGTN「高清」
+#EXTINF: -1 tvg-name="CGTN" group-title="CCTV" tvg-id="CGTN" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/CGTN.png", CGTN
 rtp://233.18.204.28:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="安徽卫视" group-title="卫视频道" tvg-id="安徽卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/安徽卫视.png", 安徽卫视「高清」
+#EXTINF: -1 tvg-name="安徽卫视" group-title="卫视频道" tvg-id="安徽卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/安徽卫视.png", 安徽卫视
 rtp://233.18.204.93:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="北京卫视" group-title="卫视频道" tvg-id="北京卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京卫视.png", 北京卫视「高清」
+#EXTINF: -1 tvg-name="北京卫视" group-title="卫视频道" tvg-id="北京卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京卫视.png", 北京卫视
 rtp://233.18.204.87:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="北京卫视" group-title="4K频道" tvg-id="北京卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/北京卫视.png", 北京卫视「4K」
 rtp://233.18.204.209:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="兵团卫视" group-title="卫视频道" tvg-id="兵团卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/兵团卫视.png", 兵团卫视「高清」
+#EXTINF: -1 tvg-name="兵团卫视" group-title="卫视频道" tvg-id="兵团卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/兵团卫视.png", 兵团卫视
 rtp://233.18.204.221:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="东南卫视" group-title="卫视频道" tvg-id="东南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东南卫视.png", 东南卫视「高清」
+#EXTINF: -1 tvg-name="东南卫视" group-title="卫视频道" tvg-id="东南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/东南卫视.png", 东南卫视
 rtp://233.18.204.94:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="甘肃卫视" group-title="卫视频道" tvg-id="甘肃卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/甘肃卫视.png", 甘肃卫视「高清」
+#EXTINF: -1 tvg-name="甘肃卫视" group-title="卫视频道" tvg-id="甘肃卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/甘肃卫视.png", 甘肃卫视
 rtp://233.18.204.110:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="广东卫视" group-title="卫视频道" tvg-id="广东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/广东卫视.png", 广东卫视「高清」
+#EXTINF: -1 tvg-name="广东卫视" group-title="卫视频道" tvg-id="广东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/广东卫视.png", 广东卫视
 rtp://233.18.204.88:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="广东卫视" group-title="4K频道" tvg-id="广东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/广东卫视.png", 广东卫视「4K」
 rtp://233.18.204.218:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="广西卫视" group-title="卫视频道" tvg-id="广西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/广西卫视.png", 广西卫视「高清」
+#EXTINF: -1 tvg-name="广西卫视" group-title="卫视频道" tvg-id="广西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/广西卫视.png", 广西卫视
 rtp://233.18.204.107:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="贵州卫视" group-title="卫视频道" tvg-id="贵州卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/贵州卫视.png", 贵州卫视「高清」
+#EXTINF: -1 tvg-name="贵州卫视" group-title="卫视频道" tvg-id="贵州卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/贵州卫视.png", 贵州卫视
 rtp://233.18.204.101:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="海南卫视" group-title="卫视频道" tvg-id="海南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/海南卫视.png", 海南卫视「高清」
+#EXTINF: -1 tvg-name="海南卫视" group-title="卫视频道" tvg-id="海南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/海南卫视.png", 海南卫视
 rtp://233.18.204.102:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="河北卫视" group-title="卫视频道" tvg-id="河北卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/河北卫视.png", 河北卫视「高清」
+#EXTINF: -1 tvg-name="河北卫视" group-title="卫视频道" tvg-id="河北卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/河北卫视.png", 河北卫视
 rtp://233.18.204.103:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="河南卫视" group-title="卫视频道" tvg-id="河南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/河南卫视.png", 河南卫视「高清」
+#EXTINF: -1 tvg-name="河南卫视" group-title="卫视频道" tvg-id="河南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/河南卫视.png", 河南卫视
 rtp://233.18.204.105:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="黑龙江卫视" group-title="卫视频道" tvg-id="黑龙江卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/黑龙江卫视.png", 黑龙江卫视「高清」
+#EXTINF: -1 tvg-name="黑龙江卫视" group-title="卫视频道" tvg-id="黑龙江卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/黑龙江卫视.png", 黑龙江卫视
 rtp://233.18.204.90:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="湖北卫视" group-title="卫视频道" tvg-id="湖北卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/湖北卫视.png", 湖北卫视「高清」
+#EXTINF: -1 tvg-name="湖北卫视" group-title="卫视频道" tvg-id="湖北卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/湖北卫视.png", 湖北卫视
 rtp://233.18.204.92:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="湖南卫视" group-title="卫视频道" tvg-id="湖南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/湖南卫视.png", 湖南卫视「高清」
+#EXTINF: -1 tvg-name="湖南卫视" group-title="卫视频道" tvg-id="湖南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/湖南卫视.png", 湖南卫视
 rtp://233.18.204.86:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="湖南卫视" group-title="4K频道" tvg-id="湖南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/湖南卫视.png", 湖南卫视「4K」
 rtp://233.18.204.227:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="吉林卫视" group-title="卫视频道" tvg-id="吉林卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/吉林卫视.png", 吉林卫视「高清」
+#EXTINF: -1 tvg-name="吉林卫视" group-title="卫视频道" tvg-id="吉林卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/吉林卫视.png", 吉林卫视
 rtp://233.18.204.108:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="江苏卫视" group-title="卫视频道" tvg-id="江苏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/江苏卫视.png", 江苏卫视「高清」
+#EXTINF: -1 tvg-name="江苏卫视" group-title="卫视频道" tvg-id="江苏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/江苏卫视.png", 江苏卫视
 rtp://233.18.204.85:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="江苏卫视" group-title="4K频道" tvg-id="江苏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/江苏卫视.png", 江苏卫视「4K」
 rtp://233.18.204.226:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="江西卫视" group-title="卫视频道" tvg-id="江西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/江西卫视.png", 江西卫视「高清」
+#EXTINF: -1 tvg-name="江西卫视" group-title="卫视频道" tvg-id="江西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/江西卫视.png", 江西卫视
 rtp://233.18.204.95:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="辽宁卫视" group-title="卫视频道" tvg-id="辽宁卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/辽宁卫视.png", 辽宁卫视「高清」
+#EXTINF: -1 tvg-name="辽宁卫视" group-title="卫视频道" tvg-id="辽宁卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/辽宁卫视.png", 辽宁卫视
 rtp://233.18.204.96:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="内蒙古卫视" group-title="卫视频道" tvg-id="内蒙古卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/内蒙古卫视.png", 内蒙古卫视「高清」
+#EXTINF: -1 tvg-name="内蒙古卫视" group-title="卫视频道" tvg-id="内蒙古卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/内蒙古卫视.png", 内蒙古卫视
 rtp://233.18.204.217:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="宁夏卫视" group-title="卫视频道" tvg-id="宁夏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/宁夏卫视.png", 宁夏卫视「高清」
+#EXTINF: -1 tvg-name="宁夏卫视" group-title="卫视频道" tvg-id="宁夏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/宁夏卫视.png", 宁夏卫视
 rtp://233.18.204.230:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="青海卫视" group-title="卫视频道" tvg-id="青海卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/青海卫视.png", 青海卫视「高清」
+#EXTINF: -1 tvg-name="青海卫视" group-title="卫视频道" tvg-id="青海卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/青海卫视.png", 青海卫视
 rtp://233.18.204.112:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="三沙卫视" group-title="卫视频道" tvg-id="三沙卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/三沙卫视.png", 三沙卫视「高清」
+#EXTINF: -1 tvg-name="三沙卫视" group-title="卫视频道" tvg-id="三沙卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/三沙卫视.png", 三沙卫视
 rtp://233.18.204.172:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="山东卫视" group-title="卫视频道" tvg-id="山东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/山东卫视.png", 山东卫视「高清」
+#EXTINF: -1 tvg-name="山东卫视" group-title="卫视频道" tvg-id="山东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/山东卫视.png", 山东卫视
 rtp://233.18.204.91:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="山东卫视" group-title="4K频道" tvg-id="山东卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/山东卫视.png", 山东卫视「4K」
 rtp://233.18.204.228:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="山西卫视" group-title="卫视频道" tvg-id="山西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/山西卫视.png", 山西卫视「高清」
+#EXTINF: -1 tvg-name="山西卫视" group-title="卫视频道" tvg-id="山西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/山西卫视.png", 山西卫视
 rtp://233.18.204.211:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="陕西卫视" group-title="卫视频道" tvg-id="陕西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/陕西卫视.png", 陕西卫视「高清」
+#EXTINF: -1 tvg-name="陕西卫视" group-title="卫视频道" tvg-id="陕西卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/陕西卫视.png", 陕西卫视
 rtp://233.18.204.223:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="深圳卫视" group-title="卫视频道" tvg-id="深圳卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/深圳卫视.png", 深圳卫视「高清」
+#EXTINF: -1 tvg-name="深圳卫视" group-title="卫视频道" tvg-id="深圳卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/深圳卫视.png", 深圳卫视
 rtp://233.18.204.89:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="深圳卫视" group-title="4K频道" tvg-id="深圳卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/深圳卫视.png", 深圳卫视「4K」
 rtp://233.18.204.219:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="四川卫视" group-title="卫视频道" tvg-id="四川卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/四川卫视.png", 四川卫视「高清」
+#EXTINF: -1 tvg-name="四川卫视" group-title="卫视频道" tvg-id="四川卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/四川卫视.png", 四川卫视
 rtp://233.18.204.99:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="四川卫视" group-title="4K频道" tvg-id="四川卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/四川卫视.png", 四川卫视「4K」
 rtp://233.18.204.225:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="天津卫视" group-title="卫视频道" tvg-id="天津卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/天津卫视.png", 天津卫视「高清」
+#EXTINF: -1 tvg-name="天津卫视" group-title="卫视频道" tvg-id="天津卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/天津卫视.png", 天津卫视
 rtp://233.18.204.97:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="西藏卫视" group-title="卫视频道" tvg-id="西藏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/西藏卫视.png", 西藏卫视「高清」
+#EXTINF: -1 tvg-name="西藏卫视" group-title="卫视频道" tvg-id="西藏卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/西藏卫视.png", 西藏卫视
 rtp://233.18.204.222:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="新疆卫视" group-title="卫视频道" tvg-id="新疆卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/新疆卫视.png", 新疆卫视「高清」
+#EXTINF: -1 tvg-name="新疆卫视" group-title="卫视频道" tvg-id="新疆卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/新疆卫视.png", 新疆卫视
 rtp://233.18.204.220:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="延边卫视" group-title="卫视频道" tvg-id="延边卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/延边卫视.png", 延边卫视
 rtp://233.18.204.155:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="云南卫视" group-title="卫视频道" tvg-id="云南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/云南卫视.png", 云南卫视「高清」
+#EXTINF: -1 tvg-name="云南卫视" group-title="卫视频道" tvg-id="云南卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/云南卫视.png", 云南卫视
 rtp://233.18.204.106:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="浙江卫视" group-title="卫视频道" tvg-id="浙江卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/浙江卫视.png", 浙江卫视「高清」
+#EXTINF: -1 tvg-name="浙江卫视" group-title="卫视频道" tvg-id="浙江卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/浙江卫视.png", 浙江卫视
 rtp://233.18.204.84:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="浙江卫视" group-title="4K频道" tvg-id="浙江卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/浙江卫视.png", 浙江卫视「4K」
 rtp://233.18.204.229:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="重庆卫视" group-title="卫视频道" tvg-id="重庆卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/重庆卫视.png", 重庆卫视「高清」
+#EXTINF: -1 tvg-name="重庆卫视" group-title="卫视频道" tvg-id="重庆卫视" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/重庆卫视.png", 重庆卫视
 rtp://233.18.204.100:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="金色学堂" group-title="少儿频道" tvg-id="金色学堂" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金色学堂.png", 金色学堂「高清」
+#EXTINF: -1 tvg-name="金色学堂" group-title="少儿频道" tvg-id="金色学堂" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金色学堂.png", 金色学堂
 rtp://233.18.204.66:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="BesTV动画" group-title="4K频道" tvg-id="BesTV动画", BesTV动画「4K」
 rtp://233.18.204.171:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="动漫秀场" group-title="少儿频道" tvg-id="动漫秀场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/动漫秀场.png", 动漫秀场「高清」
+#EXTINF: -1 tvg-name="动漫秀场" group-title="少儿频道" tvg-id="动漫秀场" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/动漫秀场.png", 动漫秀场
 rtp://233.18.204.46:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="哈哈炫动" group-title="少儿频道" tvg-id="哈哈炫动" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/哈哈炫动.png", 哈哈炫动「高清」
+#EXTINF: -1 tvg-name="哈哈炫动" group-title="少儿频道" tvg-id="哈哈炫动" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/哈哈炫动.png", 哈哈炫动
 rtp://233.18.204.54:5140?fcc=124.75.25.211%3A7777
 #EXTINF: -1 tvg-name="嘉佳卡通" group-title="少儿频道" tvg-id="嘉佳卡通" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/嘉佳卡通.png", 嘉佳卡通
 rtp://233.18.204.151:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="金鹰卡通" group-title="少儿频道" tvg-id="金鹰卡通" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金鹰卡通.png", 金鹰卡通「高清」
+#EXTINF: -1 tvg-name="金鹰卡通" group-title="少儿频道" tvg-id="金鹰卡通" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/金鹰卡通.png", 金鹰卡通
 rtp://233.18.204.113:5140?fcc=124.75.25.211%3A7777
-#EXTINF: -1 tvg-name="卡酷少儿" group-title="少儿频道" tvg-id="卡酷少儿" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/卡酷少儿.png", 卡酷少儿「高清」
+#EXTINF: -1 tvg-name="卡酷少儿" group-title="少儿频道" tvg-id="卡酷少儿" tvg-logo="https://cdn.jsdelivr.net/gh/ihipop/Shanghai-IPTV@master/tv-logo/卡酷少儿.png", 卡酷少儿
 rtp://233.18.204.109:5140?fcc=124.75.25.211%3A7777

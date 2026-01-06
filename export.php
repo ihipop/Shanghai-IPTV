@@ -167,7 +167,7 @@ foreach ($channels as $channel) {
       
         // 应用清晰度标签
         $displayName = $channelName;
-        if (isset(QUALITY_DISPLAY_MAP[$quality])) {
+        if ($quality != "HD" && isset(QUALITY_DISPLAY_MAP[$quality])) {
             $displayName .= QUALITY_DISPLAY_MAP[$quality];
         }
         
